@@ -97,6 +97,9 @@ table {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
 }
+.PRE-ORDER_LINK i {
+    opacity: .55;
+}
 a {
     text-decoration: none !important;
     color: black;
@@ -105,6 +108,7 @@ a {
     width: 100%;
     height: auto;
     margin-top: 20px;
+    opacity: 1;
 }
 .picks-header {
     height: 68px;
@@ -120,12 +124,12 @@ a {
     width: 23%;
     font-family: 'Prata', serif;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 3.25vw;
     text-align: center;
 }
 .picks-border {
     display: inline-block;
-    width: 38%;
+    width: 37.5%;
     height: 12px;
     border-top: 1.25px solid rgba(0,0,0, 0.5);
 }
