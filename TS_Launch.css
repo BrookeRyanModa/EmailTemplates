@@ -10,6 +10,13 @@ html {
 title {
     display: none;
 }
+a {
+    text-decoration: none !important;
+    color: black;
+}
+a:hover, a:active {
+    text-decoration-line: underline !important;
+}
 .MODA_HEADER {
     align-items: center;
     width: 100%;
@@ -100,10 +107,7 @@ table {
 .PRE-ORDER_LINK i {
     opacity: .55;
 }
-a {
-    text-decoration: none !important;
-    color: black;
-}
+
 .HERO_IMAGE img {
     width: 100%;
     height: auto;
@@ -138,13 +142,19 @@ a {
     width: 100%;
     height: auto;
     display: inline-block;
+    margin-bottom: 40px;
+}
+.PRODUCT_GRID .PRE-ORDER_LINK {
+    padding-bottom: 2.5%;
 }
 .product {
     display: inline-block;
     float: left;
-    width: 50%;
+    width: 45%;
+    margin: 0 2.5% 2.5% 2.5%;
     height: 350px;
     background-color: red;
+    box-shadow: 5px 5px 10px 2.5px pink;
 }
 .trunkshow-border {
     width: 85%;
