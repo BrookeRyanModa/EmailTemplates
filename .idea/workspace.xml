@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f2c398d5-7056-4ecd-8095-259b032dad2c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TS_Launch.css" beforeDir="false" afterPath="$PROJECT_DIR$/TS_Launch.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TS_Launch.html" beforeDir="false" afterPath="$PROJECT_DIR$/TS_Launch.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,33 +36,33 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="236" />
-          <entry key="html" value="334" />
+          <entry key="html" value="335" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="236" />
-          <entry key="HTML" value="334" />
+          <entry key="HTML" value="335" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TS_Launch.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+            <state relative-caret-position="-1865">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TS_Launch.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2862">
-              <caret line="152" selection-start-line="152" selection-end-line="152" />
+            <state relative-caret-position="219">
+              <caret line="93" column="18" lean-forward="true" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
               <folding>
                 <element signature="e#4860#4865#0" expanded="true" />
               </folding>
@@ -85,8 +83,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TS_Launch.html" />
         <option value="$PROJECT_DIR$/TS_Launch.css" />
+        <option value="$PROJECT_DIR$/TS_Launch.html" />
       </list>
     </option>
   </component>
@@ -149,12 +147,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548170344127</updated>
-      <workItem from="1548170345378" duration="4906000" />
+      <workItem from="1548170345378" duration="5634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4906000" />
+    <option name="totallyTimeSpent" value="5634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3184" y="23" width="1042" height="947" extended-state="0" />
@@ -205,20 +203,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TS_Launch.html">
+    <entry file="file://$PROJECT_DIR$/TS_Launch.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2862">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
-          <folding>
-            <element signature="e#4860#4865#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1865">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TS_Launch.css">
+    <entry file="file://$PROJECT_DIR$/TS_Launch.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        <state relative-caret-position="219">
+          <caret line="93" column="18" lean-forward="true" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
+          <folding>
+            <element signature="e#4860#4865#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
