@@ -1,18 +1,24 @@
-const interval = setInterval(animateBanner(),1000);
+const sleep = (milliseconds) => {
+  return new Promise(resolve => setTimeout(resolve, milliseconds))
+};
 
-let access = document.getElementsByClassName('access');
-let discovery = document.getElementsByClassName('discovery');
-let choice = document.getElementsByClassName('choice');
+$(document).ready(function() {
 
-function animateBanner() {
-  access.style.display = block;
-  sleep(1500);
-  access.style.display = none;
-
-}
-animateBanner();
+  function startAnimation() {
+    var $el = $("#animation-shell");
 
 
-// function stopAnimate () {
-//   clearInterval(interval)
-// }
+    $el.text("ACCESS").removeClass("experience");
+    sleep(1000)
+        .then(() => $el.text("DISCOVERY"))
+        .then(() => sleep(1000))
+        .then(() => $el.text("CHOICE.").css('font-weight', '400'))
+        .then(() => sleep(2000))
+        .then(() => $el.text("THE TRUNKSHOW EXPERIENCE").addClass("experience"))
+        .then(() => sleep(5000));
+  }
+  startAnimation();
+  setInterval(startAnimation, 9000);
+
+});
+
