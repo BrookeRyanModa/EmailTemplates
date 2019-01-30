@@ -4,11 +4,206 @@
     <meta charset="utf-8">
     <title>Moda Operandi</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,600,600i,700,700i|Frank+Ruhl+Libre:300,400,500,700,900|Montserrat:100,200,300,400,500,600,700,800,900|Prata|Old+Standard+TT:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="TS_Launch.css">
-    <script src="../ts-banner/TS_Banner.js"></script>
+    <style>
+      html {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      title {
+        display: none;
+      }
+      a {
+        text-decoration: none !important;
+        color: black;
+      }
+      a:hover, a:active {
+        text-decoration-line: underline !important;
+      }
+      .MODA_HEADER {
+        align-items: center;
+        width: 100%;
+      }
+      .LOGO {
+        text-decoration:none;
+        text-align: center;
+        padding: 35px 0 15px 0;
+        width: 100%;
+        height: 80px;
+        box-sizing: border-box !important;
+      }
+      img {
+        height: 25px;
+        width: auto;
+        line-height: 20px;
+        color: #3c1315;
+        opacity: .75;
+      }
+      table {
+        width: 100%;
+      }
+      .MODA_NAV {
+        height: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        padding: 0 0 15px 0;
+        text-decoration: none !important;
+        width: 100%;
+        border-bottom: 1px solid #F3F3F3;
+        padding-bottom: 10px;
+      }
+      .NAVLINK {
+        padding: 0 10px;
+        color: #222222;
+        letter-spacing: 0.15em;
+        text-decoration: none !important;
+        text-decoration-line: none !important;
+        opacity: .5;
+      }
+      .content-header img {
+        width: 100%;
+        height: auto;
+      }
+      .TRUNKSHOW_TOPPER {
+        padding-top: 30px;
+        align-items: center;
+      }
+      .TRUNKSHOW_NAME {
+        font-family: 'Prata', serif;
+        opacity: .75;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 100;
+        letter-spacing: .5px;
+      }
+      .PRE-ORDER_LINK {
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+      }
+      .PRE-ORDER_LINK i {
+        opacity: .55;
+      }
+
+      .HERO_IMAGE img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        opacity: 1;
+      }
+      .picks-header img {
+        margin-top: 30px;
+        padding: 0 5%;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        float: left;
+        margin-bottom: 2.5%;
+      }
+      .picks-header h2 {
+        display: inline-block;
+        height: 100%;
+        width: 23%;
+        font-family: 'Prata', serif;
+        font-weight: 100;
+        font-size: 3.25vw;
+        text-align: center;
+      }
+      .picks-border {
+        display: inline-block;
+        width: 37.5%;
+        height: 12px;
+        border-top: 1.25px solid rgba(0,0,0, 0.5);
+      }
+      .PRODUCT_GRID {
+        padding: 0 15%;
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        margin-bottom: 40px;
+      }
+      .PRODUCT_GRID .PRE-ORDER_LINK {
+        padding-bottom: 2.5%;
+      }
+      .product {
+        display: inline-block;
+        float: left;
+        width: 45%;
+        margin: 0 2.5% 2.5% 2.5%;
+        height: 350px;
+        background-color: red;
+        box-shadow: 5px 5px 10px 2.5px pink;
+      }
+      .trunkshow-border {
+        width: 85%;
+        border-bottom: 1.25px solid lightgrey;
+        margin: 20px 7.5%;
+      }
+      .email-footer {
+        height: 300px;
+        width: 100%;
+        padding: 20px;
+        background-color: #734F59;
+      }
+      .CONTACT_INFO {
+        color: white !important;
+        font-family: 'Montserrat', sans-serif;
+        padding: 10px;
+        opacity: .8;
+      }
+      .CONTACT_INFO p {
+        padding: 5px;
+        width: 100%;
+        font-size: 12px;
+        letter-spacing: .5px;
+      }
+      .CONTACT_INFO h6 {
+        padding: 5px;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+      }
+      .CONTACT_INFO p a {
+        color: white !important;
+      }
+      .CONTACT_INFO p a :hover {
+        font-weight: bold;
+      }
+      .footer-border {
+        width: 100%;
+        margin: 15px 0 10px 0;
+        border-bottom: 1px solid white;
+      }
+      .download-mo {
+        letter-spacing: .5px;
+        margin: 0 5px;
+      }
+      .social-link {
+        margin: 0 5px;
+      }
+      .bottom {
+        margin-top: 15px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+    </style>
+
   </head>
   <body>
     <section class="MODA_HEADER">
@@ -52,15 +247,8 @@
     </tbody>
   </table>
   <section class="content-header">
-    <article class="left">
-      JUST LAUNCHED TRUNKSHOW
-    </article>
-    <article class="right">
-      ACCESS. DISCOVERY. CHOICE.
-    </article>
+    <img src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c4f241d86cbaa3a72760d99/46aa07770100081adb6f15af73a397a7/TS_Email_NewTS_03.jpg" alt="">
   </section>
-
-  <section class="border"></section>
 
   <section class="TRUNKSHOW_TOPPER">
     <h1 class="TRUNKSHOW_NAME">
@@ -79,13 +267,9 @@
 <!-- WILL BE DYNAMIC INCLUDING, ALT TAG-->
   </section>
 
-  <section class="picks-header">
-    <article class="picks-border"></article>
-    <h2>
-      Editor's Picks
-    </h2>
-    <article class="picks-border"></article>
-  </section>
+    <section class="picks-header">
+      <img src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c4f241d86cbaa3a72760d99/a3e78604f2cccaea3f153951e9a9540e/TS_Email_NewTS_divider.jpg" alt="">
+    </section>
   <section class="PRODUCT_GRID">
     <article class="product">
       <img src="" alt="">
@@ -128,11 +312,7 @@
   </section>
 
   <section class="picks-header">
-    <article class="picks-border"></article>
-    <h2>
-      Editor's Picks
-    </h2>
-    <article class="picks-border"></article>
+    <img src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c4f241d86cbaa3a72760d99/a3e78604f2cccaea3f153951e9a9540e/TS_Email_NewTS_divider.jpg" alt="">
   </section>
   <section class="PRODUCT_GRID">
     <article class="product">
@@ -157,22 +337,7 @@
   </section>
 
 
-  <section class="BANNER">
-    <h1 class="key">
-      <i class="fa fa-suitcase" aria-hidden="true"></i>
 
-    </h1>
-    <a class="banner-link" href="https://www.modaoperandi.com/editorial/what-is-a-moda-operandi-trunkshow">
-      <article class="ts-animation">
-        <p id="animation-shell">
-          <br>
-        </p>
-      </article>
-      <p class="learn">
-        learn more
-      </p>
-    </a>
-  </section>
   <section class="email-footer">
     <article class="CONTACT_INFO">
       <h6>
@@ -252,5 +417,31 @@
     </p>
     </article>
   </section>
+    <script>
+      const sleep = (milliseconds) => {
+        return new Promise(resolve => setTimeout(resolve, milliseconds))
+      };
+
+      $(document).ready(function() {
+
+        function startAnimation() {
+          var $el = $("#animation-shell");
+
+
+          $el.text("ACCESS").removeClass("experience");
+          sleep(1000)
+              .then(() => $el.text("DISCOVERY"))
+              .then(() => sleep(1000))
+              .then(() => $el.text("CHOICE.").css('font-weight', '400'))
+              .then(() => sleep(2000))
+              .then(() => $el.text("THE TRUNKSHOW EXPERIENCE").addClass("experience"))
+              .then(() => sleep(5000));
+        }
+        startAnimation();
+        setInterval(startAnimation, 9000);
+
+      });
+
+    </script>
   </body>
 </html>
