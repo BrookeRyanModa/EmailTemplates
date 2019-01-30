@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2c398d5-7056-4ecd-8095-259b032dad2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/current/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/current/mess.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TS-Launching/TS_Launch.css" beforeDir="false" afterPath="$PROJECT_DIR$/TS-Launching/TS_Launch.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TS-Launching/TS_Launch.html" beforeDir="false" afterPath="$PROJECT_DIR$/TS-Launching/TS_Launch.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/footer/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/footer/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ts-banner/TS_Banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/ts-banner/TS_Banner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ts-banner/TS_Banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/ts-banner/TS_Banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/current/mess.html" beforeDir="false" afterPath="$PROJECT_DIR$/current/mess.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,14 +42,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="945" />
-          <entry key="html" value="3129" />
+          <entry key="html" value="3419" />
           <entry key="js" value="1433" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="945" />
-          <entry key="HTML" value="3129" />
+          <entry key="HTML" value="3419" />
           <entry key="JavaScript" value="1433" />
         </counts>
       </usages-collector>
@@ -65,20 +57,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TS-Launching/TS_Launch.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/current/mess.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="159" column="21" selection-start-line="159" selection-start-column="21" selection-end-line="159" selection-end-column="21" />
+            <state relative-caret-position="382">
+              <caret line="154" column="40" selection-start-line="154" selection-start-column="40" selection-end-line="154" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -260,12 +243,12 @@
       <workItem from="1548280595170" duration="11709000" />
       <workItem from="1548356930033" duration="1384000" />
       <workItem from="1548368820682" duration="13651000" />
-      <workItem from="1548687287313" duration="22827000" />
+      <workItem from="1548687287313" duration="26382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55648000" />
+    <option name="totallyTimeSpent" value="59203000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3147" y="23" width="954" height="977" extended-state="0" />
@@ -444,13 +427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TS-Launching/TS_Launch.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TS-Launching/TS_Launch.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -458,10 +434,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TS-Launching/TS_Launch.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/current/mess.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="159" column="21" selection-start-line="159" selection-start-column="21" selection-end-line="159" selection-end-column="21" />
+        <state relative-caret-position="382">
+          <caret line="154" column="40" selection-start-line="154" selection-start-column="40" selection-end-line="154" selection-end-column="40" />
           <folding>
             <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />

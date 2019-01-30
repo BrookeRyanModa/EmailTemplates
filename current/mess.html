@@ -54,12 +54,15 @@
     text-decoration: underline;
   }
   .PRE-ORDER_LINK {
+    display: inline-block;
     font-size: 2.25vw;
     text-align: center;
     letter-spacing: 1px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    box-sizing: border-box;
+    margin: 2vw 0 5vw 0;
   }
   .PRE-ORDER_LINK:hover {
     text-decoration: underline;
@@ -71,7 +74,7 @@
   .HERO_IMAGE img {
     width: 100%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 5vw;
     opacity: 1;
   }
   .picks-header img {
@@ -93,21 +96,20 @@
     text-align: center;
   }
   .PRODUCT_GRID {
-    padding: 0 15%;
     width: 100%;
+    max-width: 100%;
     height: auto;
     display: inline-block;
-    margin-bottom: 40px;
-  }
-  .PRODUCT_GRID .PRE-ORDER_LINK {
-    padding-bottom: 2.5%;
+    box-sizing: border-box;
+    padding: 0 5%;
   }
   .product {
+    box-sizing: border-box;
     display: inline-block;
     float: left;
-    width: 45%;
-    margin: 0 2.5% 2.5% 2.5%;
-    height: 350px;
+    width: 25%;
+    padding: 0 1vw;
+    height: 35vw;
     background-color: red;
     box-shadow: 5px 5px 10px 2.5px pink;
   }
@@ -116,8 +118,6 @@
     border-bottom: 1.25px solid lightgrey;
     margin: 20px 7.5%;
   }
-
-
   * {
     margin: 0;
     padding: 0;
@@ -152,12 +152,22 @@
   td[class=right-top-text] {
     text-align: right;
   }
-  @media only screen and (max-width: 736px) {
+  @media only screen and (max-width: 600px) {
 
-    .content-header {
+    .product {
+      width: 50%;
+      padding: 0 1vw;
+      height: 45vw;
+      background-color: red;
+      box-shadow: 5px 5px 10px 2.5px pink;
+    }
+    .LOGO img {
+      width: 60%;
+      margin: 4vw 0 1vw 0;
     }
     .content-subnavigation {
       font-size: 2vw;
+      line-height: 5vw;
     }
 
     /* mobile-specific CSS styles go here */
@@ -481,7 +491,7 @@
         </section>
 
         <section class="picks-header">
-          <img src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c4f241d86cbaa3a72760d99/a3e78604f2cccaea3f153951e9a9540e/TS_Email_NewTS_divider.jpg" alt="">
+          <img src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c2a832e115d521e21e75d00/62dadafa54e8cc13843efe61410e0fe2/Editor_sPicks.jpg" alt="">
         </section>
         <section class="PRODUCT_GRID">
           <article class="product">
@@ -490,20 +500,20 @@
           <article class="product">
             <img src="" alt="">
           </article>
-          <h3 class="PRE-ORDER_LINK">
-            <a href="#">
-              PRE-ORDER NOW <i class="fa fa-angle-right" aria-hidden="true"></i>
-              <!-- STATIC, WILL MAKE HREF DYNAMIC -->
-            </a>
-          </h3>
           <article class="product">
             <img src="" alt="">
           </article>
           <article class="product">
             <img src="" alt="">
           </article>
-          <!--ALL SRC and ALT TAGS WILL BE DYNAMIC-->
         </section>
+        <h3 class="PRE-ORDER_LINK">
+          <a href="#">
+            PRE-ORDER NOW <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <!-- STATIC, WILL MAKE HREF DYNAMIC -->
+          </a>
+        </h3>
+          <!--ALL SRC and ALT TAGS WILL BE DYNAMIC-->
 
         <section class="trunkshow-border"></section>
 
@@ -525,9 +535,15 @@
         </section>
 
         <section class="picks-header">
-          <img src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c4f241d86cbaa3a72760d99/a3e78604f2cccaea3f153951e9a9540e/TS_Email_NewTS_divider.jpg" alt="">
+          <img src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c2a832e115d521e21e75d00/62dadafa54e8cc13843efe61410e0fe2/Editor_sPicks.jpg" alt="">
         </section>
         <section class="PRODUCT_GRID">
+          <article class="product">
+            <img src="" alt="">
+          </article>
+          <article class="product">
+            <img src="" alt="">
+          </article>
           <article class="product">
             <img src="" alt="">
           </article>
@@ -540,12 +556,6 @@
               <!-- STATIC, WILL MAKE HREF DYNAMIC -->
             </a>
           </h3>
-          <article class="product">
-            <img src="" alt="">
-          </article>
-          <article class="product">
-            <img src="" alt="">
-          </article>
           <!--ALL SRC and ALT TAGS WILL BE DYNAMIC-->
         </section>
 
