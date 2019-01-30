@@ -1,0 +1,45 @@
+.email-footer {
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+    background-color: #734F59;
+}
+.CONTACT_INFO {
+    color: white !important;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    opacity: .8;
+}
+.CONTACT_INFO p {
+    padding: 5px;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: .5px;
+}
+.CONTACT_INFO h6 {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+.CONTACT_INFO p a {
+    color: white !important;
+}
+.CONTACT_INFO p a :hover {
+    font-weight: bold;
+}
+.footer-border {
+    width: 100%;
+    margin: 15px 0 10px 0;
+    border-bottom: 1px solid white;
+}
+.download-mo {
+    letter-spacing: .5px;
+    margin: 0 5px;
+}
+.social-link {
+    margin: 0 5px;
+}
+.bottom {
+    margin-top: 15px;
+}

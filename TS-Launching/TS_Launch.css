@@ -46,7 +46,6 @@ table {
     font-size: 11px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    background-color: #ffffff;
     padding: 0 0 15px 0;
     text-decoration: none !important;
     width: 100%;
@@ -61,28 +60,9 @@ table {
     text-decoration-line: none !important;
     opacity: .5;
 }
-.content-header {
-    padding: 25px 7.5% 10px 7.5%;
-    display: inline-block;
+.content-header img {
     width: 100%;
-    box-sizing: border-box !important;
-    font-size: 14px;
-    letter-spacing: 1.5px;
-    font-family: 'Montserrat', sans-serif;
-}
-.left {
-    font-weight: 500;
-    float: left;
-}
-.right {
-    font-weight: 200;
-    float: right;
-}
-.border {
-    width: 85%;
-    border-bottom: 1.25px solid black;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    height: auto;
 }
 .TRUNKSHOW_TOPPER {
     padding-top: 30px;
@@ -91,7 +71,6 @@ table {
 .TRUNKSHOW_NAME {
     font-family: 'Prata', serif;
     opacity: .75;
-    /*font-family: 'Frank Ruhl Libre', serif;*/
     text-align: center;
     font-size: 50px;
     font-weight: 100;
@@ -114,13 +93,14 @@ table {
     margin-top: 20px;
     opacity: 1;
 }
-.picks-header {
-    height: 68px;
+.picks-header img {
     margin-top: 30px;
-    padding: 0 2.5%;
+    padding: 0 5%;
     width: 100%;
     max-width: 100%;
+    height: auto;
     float: left;
+    margin-bottom: 2.5%;
 }
 .picks-header h2 {
     display: inline-block;
@@ -161,106 +141,10 @@ table {
     border-bottom: 1.25px solid lightgrey;
     margin: 20px 7.5%;
 }
-.email-footer {
-    height: 300px;
-    width: 100%;
-    padding: 20px;
-    background-color: #734F59;
-}
-.CONTACT_INFO {
-    color: white !important;
-    font-family: 'Montserrat', sans-serif;
-    padding: 10px;
-    opacity: .8;
-}
-.CONTACT_INFO p {
-    padding: 5px;
-    width: 100%;
-    font-size: 12px;
-    letter-spacing: .5px;
-}
-.CONTACT_INFO h6 {
-    padding: 5px;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 1.5px;
-}
-.CONTACT_INFO p a {
-    color: white !important;
-}
-.CONTACT_INFO p a :hover {
-    font-weight: bold;
-}
-.footer-border {
-    width: 100%;
-    margin: 15px 0 10px 0;
-    border-bottom: 1px solid white;
-}
-.download-mo {
-    letter-spacing: .5px;
-    margin: 0 5px;
-}
-.social-link {
-    margin: 0 5px;
-}
-.bottom {
-    margin-top: 15px;
-}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.BANNER {
-    box-sizing: border-box;
-    /*background-color: #E8D6D6;*/
-    color: #734F59 !important;
-    max-width: 100vw;
-    height: 135px;
-    padding: 20px;
-    text-align: center;
-    font-size: 32px;
-    overflow: scroll;
-}
-.ts-animation {
-    height: 35px;
-    width: 100%;
-    font-family: Montserrat, sans-serif;
-    font-weight: 300;
-    letter-spacing: 1.25px;
-    color: black !important;
-}
-.experience {
-    font-family: 'Old Standard TT', serif;
-    font-weight: 400 !important;
-    font-size: 35px;
-    font-style: italic;
-    letter-spacing: 1px;
-    color: #BC9D79 !important;
-    text-shadow: 1.5px 1.5px 3px #BFA3A3;
-    -webkit-mask-image: -webkit-gradient(linear, right top,
-    left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,.5)));
-}
-.key {
-    font-size: 20px;
-    padding-bottom: 10px;
-    opacity: .75;
-}
-.learn {
-    margin-top: 7.5px;
-    font-family: 'Old Standard TT', serif;
-    font-size: 18px;
-    font-style: italic;
-    color: #606060;
-    letter-spacing: .8px;
-    font-weight: 100;
-
-}
-.learn:hover {
-    font-weight: 700;
-    text-shadow: 1px 1px lightgray;
-}
-a.banner-link {
-    text-decoration: none !important;
 }

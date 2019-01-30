@@ -210,7 +210,7 @@
       <article class="LOGO">
         <a href="https://modaoperandi.com">
           <img alt="M'oda'Operandi"
-          src="http://img.modaoperandi.com/media/img/email/uploads/mo_logo_gold.png"
+          src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c2a52bc9760cb41cd540bdd/x/40ec4276ff5255fbd0160fd81859957b/MO_LOGO.png"
           />
         </a>
       </article>
@@ -338,110 +338,7 @@
 
 
 
-  <section class="email-footer">
-    <article class="CONTACT_INFO">
-      <h6>
-      Contact Client Services
-      </h6>
-      <p>
-      1(800)707-9898 or 1(212)729-0984  |  Monday-Friday 8am-8pm EST  |  Saturday-Sunday 9am-6pm EST
-      </p>
-    <p>
-      <a href="mailto:care@modaoperandi.com" data-text="Email Client Services">
-        Email Client Services
-      </a>
-      <span>  |  </span>
-      <a href="mailto:care@modaoperandi.com" data-text="Consult with a Personal Stylist">
-        Consult with a Personal Stylist
-      </a>
-    </p>
-    <article class="footer-border"></article>
-    <p>
-      <a class="download-mo"
-         href="https://itunes.apple.com/us/app/moda-operandi/id781702094"
-         data-text="Download M'O App">
-      <i class="fas fa-mobile-alt"></i>
-        Download the Moda App
-      </a>
-      <span>  |  </span>
-      <a class="social-link"
-         href="mailto:care@modaoperandi.com">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a class="social-link"
-         href="https://www.instagram.com/modaoperandi/"
-         rel="external"
-         target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a class="social-link"
-         href="http://www.facebook.com/ModaOperandi"
-         rel="external"
-         target="_blank">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a class="social-link"
-         href="http://twitter.com/modaoperandi"
-         rel="external"
-         target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a class="social-link"
-         href="http://www.pinterest.com/modaoperandi"
-         rel="external"
-         target="_blank">
-        <i class="fab fa-pinterest"></i>
-      </a>
-      <span>  |  </span>
-      <a class="social-link"
-         href="https://www.modaoperandi.com/terms"
-         data-text="Terms &amp; Conditions">
-        Terms &amp; Conditions
-      </a>
-      <span>  |  </span>
-      <a class="social-link"
-         href="https://www.modaoperandi.com/privacy"
-         data-text="Privacy Policy">
-        Privacy Policy
-      </a>
-      <span>  |  </span>
-      <a href="$clickthrough(Unsubscribe)$">
-        unsubscribe
-      </a>
-    </p>
-    <p class="bottom">
-      Moda Operandi 315 Hudson Street, 5th Floor, New York, NY 10013
-    </p>
-    <p>
-      © 2018 Moda Operandi, Inc. All Rights Reserved.
-    </p>
-    </article>
+
   </section>
-    <script>
-      const sleep = (milliseconds) => {
-        return new Promise(resolve => setTimeout(resolve, milliseconds))
-      };
-
-      $(document).ready(function() {
-
-        function startAnimation() {
-          var $el = $("#animation-shell");
-
-
-          $el.text("ACCESS").removeClass("experience");
-          sleep(1000)
-              .then(() => $el.text("DISCOVERY"))
-              .then(() => sleep(1000))
-              .then(() => $el.text("CHOICE.").css('font-weight', '400'))
-              .then(() => sleep(2000))
-              .then(() => $el.text("THE TRUNKSHOW EXPERIENCE").addClass("experience"))
-              .then(() => sleep(5000));
-        }
-        startAnimation();
-        setInterval(startAnimation, 9000);
-
-      });
-
-    </script>
   </body>
 </html>

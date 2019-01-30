@@ -21,4 +21,3 @@ $(document).ready(function() {
   setInterval(startAnimation, 9000);
 
 });
-
