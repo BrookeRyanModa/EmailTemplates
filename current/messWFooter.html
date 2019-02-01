@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,600,600i,700,700i|Frank+Ruhl+Libre:300,400,500,700,900|Montserrat:100,200,300,400,500,600,700,800,900|Prata|Old+Standard+TT:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,600,600i,700,700i|Frank+Ruhl+Libre:300,400,500,700,900|Montserrat:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900|Prata|Old+Standard+TT:400,400i,700" rel="stylesheet">
+
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
 <body style=""><span style="background-color:#734D58;"></span>
 <style type="text/css">
@@ -123,7 +125,7 @@
     width: 21vw;
     height: 34.5vw;
     margin: 0 1vw;
-    box-shadow: 1.5px 1.5px 7.5px 1.5px #C4A9A9;
+    box-shadow: 2px 2px 10px 2px #C4A9A9;
   }
   .product img {
     width: 100%;
@@ -168,7 +170,69 @@
   td[class=right-top-text] {
     text-align: right;
   }
+  /*FOOTER STYLE +++++++++++++++*/
+  .email-footer {
+    height: auto;
+    width: 100%;
+    padding: 5vw;
+    background-color: #E1E1E1;
+    text-align: center;
+  }
+  .client-services a:hover, .shipping-info a:hover {
+    font-weight: bold;
+  }
+  .CONTACT_INFO {
+    line-height: 2.5vw;
+    box-sizing: border-box;
+    color: #222222 !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+  .CONTACT_INFO p {
+    width: 100%;
+    font-size: 1.5vw;
+    letter-spacing: .05vw;
+  }
+  .CONTACT_INFO i {
+    opacity: .85;
+  }
+  .CONTACT_INFO p a {
+    color: #222222 !important;
+  }
+  .CONTACT_INFO p a :hover {
+    font-weight: bold;
+  }
+  .shipping-info, .client-services {
+    text-transform: uppercase;
+    letter-spacing: .1vw !important;
+    font-weight: 500;
+  }
+  .client-services i {
+    font-weight: 100;
+  }
+  .footer-border {
+    width: 100%;
+    margin: 3vw 0 2vw 0;
+    border-bottom: 1px solid rgba(34, 34, 34, .5);
 
+  }
+  .download-mo {
+    margin: 0 5px;
+    text-transform: uppercase;
+  }
+  .social-link {
+    margin: 0 5px;
+  }
+  .social-link i {
+    font-weight: 100;
+  }
+  .bottom {
+    margin-top: 2vw;
+    font-size: 1.25vw;
+  }
+  .bottom a:hover {
+    font-weight: 500;
+  }
 
   @media only screen and (max-width: 600px) {
     .LOGO img {
@@ -213,6 +277,17 @@
     }
     .footer td {
       height: 1vw;
+    }
+    .CONTACT_INFO {
+      line-height: 4vw;
+    }
+    .CONTACT_INFO p {
+      font-size: 2.5vw;
+      letter-spacing: .1vw;
+    }
+    .bottom {
+      margin-top: 2vw;
+      font-size: 1.25vw;
     }
 
 
@@ -487,25 +562,25 @@
           <td data-content-region-name="Region1" align="center" class="content-subnavigation">
             <span style="text-transform: uppercase;">
 
-              <a class="clothing" href="${clickthrough('Trunkshows', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding-left: 1.3vw; padding-right: 1.3vw; color: #000000; text-decoration: none;" target="_blank">
+              <a class="clothing" href="${clickthrough('Trunkshows', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding-left: 1.3vw; padding-right: 1.3vw; color: #222222; text-decoration: none;" target="_blank">
                 TRUNKSHOWS
               </a>
-              <a class="clothing" href="${clickthrough('New', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding-left: 1.3vw; padding-right: 1.3vw; color: #000000; text-decoration: none;" target="_blank">
+              <a class="clothing" href="${clickthrough('New', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding-left: 1.3vw; padding-right: 1.3vw; color: #222222; text-decoration: none;" target="_blank">
                 NEW
               </a>
-              <a class="clothing" href="${clickthrough('Clothing', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding-left: 1.3vw; padding-right: 1.3vw; color: #000000; text-decoration: none;" target="_blank">
+              <a class="clothing" href="${clickthrough('Clothing', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding-left: 1.3vw; padding-right: 1.3vw; color: #222222; text-decoration: none;" target="_blank">
                 CLOTHING
               </a>
-              <a class="new" href="${clickthrough('Shoes', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding-left: 1.3vw; padding-right: 1.3vw; color: #000000; text-decoration: none;" target="_blank">
+              <a class="new" href="${clickthrough('Shoes', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding-left: 1.3vw; padding-right: 1.3vw; color: #222222; text-decoration: none;" target="_blank">
                 SHOES
               </a>
-              <a class="new" href="${clickthrough('Handbags', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding-left: 1.3vw; padding-right: 1.3vw; color: #000000; text-decoration: none;" target="_blank">
+              <a class="new" href="${clickthrough('Handbags', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding-left: 1.3vw; padding-right: 1.3vw; color: #222222; text-decoration: none;" target="_blank">
                 BAGS
               </a>
-              <a class="clothing" href="${clickthrough('Jewelry', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding-left: 1.3vw; padding-right: 1.3vw; color: #000000; text-decoration: none;" target="_blank">
+              <a class="clothing" href="${clickthrough('Jewelry', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding-left: 1.3vw; padding-right: 1.3vw; color: #222222; text-decoration: none;" target="_blank">
                 JEWELRY
               </a>
-              <a class="Clothing" href="${clickthrough('The_Edit', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding-left: 1.3vw; padding-right: 1.3vw; color: #000000; text-decoration: none;" target="_blank">
+              <a class="Clothing" href="${clickthrough('The_Edit', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding-left: 1.3vw; padding-right: 1.3vw; color: #222222; text-decoration: none;" target="_blank">
                 THE EDIT
               </a>
             </span>
@@ -516,9 +591,6 @@
         </tr>
         </tbody>
       </table>
-      <!--++++ABOVE HEADER, NOT BROOKE++++-->
-      <!--$foreachnobr(cart, pairslist(4, PRODUCT_IMG_URL, TRUNKSHOW_END_DATE, PRODUCT_BRAND, PRODUCT_NAME, lookuprecords(Triggers, daily_abandoned_cart_item, pairs(CUSTOMER_ID_, lookup(CUSTOMER_ID_)), PRODUCT_IMG_URL, TRUNKSHOW_END_DATE, PRODUCT_BRAND, PRODUCT_NAME)), /contentlibrary/AbandonedCart, AbandonedCart_Product)$ -->
-
       <section class="content-header">
         <img src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c4f241d86cbaa3a72760d99/46aa07770100081adb6f15af73a397a7/TS_Email_NewTS_03.jpg" alt="">
       </section>
@@ -565,6 +637,88 @@
 
       <section class="trunkshow-border"></section>
     </#data>
+    <html>
+    <section class="email-footer">
+      <article class="CONTACT_INFO">
+        <p class="shipping-info">
+          Free U.S. Shipping & Returns&nbsp;&nbsp;|&nbsp;
+          <span class="WW">Worldwide Shipping for $20 or Less&nbsp;&nbsp;|&nbsp;</span>
+          NYC Same-Day Delivery
+        </p>
+        <p class="client-services">
+          <a href="mailto:care@modaoperandi.com" data-text="Email Client Services">
+            Contact Client Services
+            <i class="fas fa-envelope"></i>
+          </a>
+          <span class="WW">&nbsp;&nbsp;|&nbsp;1 (800) 707-9898</span>
+          <span>  |  </span>
+          <a href="https://www.modaoperandi.com/rewards"
+             target="_blank"
+             data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/rewards&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNGIFjuaWZm8hniQPnKMSu4NWZQDJA">
+            Join Moda Rewards
+          </a>
+        </p>
+        <article class="footer-border"></article>
+        <p class="bottom">
+          <a class="download-mo"
+             href="https://itunes.apple.com/us/app/moda-operandi/id781702094"
+             target="_blank"
+             data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://itunes.apple.com/us/app/moda-operandi/id781702094&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNGM45IEqfGKqusg9w5XkK5LaIof1Q">
+            <i class="fas fa-mobile-alt"></i>&nbsp;
+            Download the Moda App
+          </a>
+          <span>  |  </span>
+          <a class="social-link"
+             href="mailto:care@modaoperandi.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a class="social-link"
+             href="https://www.instagram.com/modaoperandi/"
+             rel="external"
+             target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="social-link"
+             href="http://www.facebook.com/ModaOperandi"
+             rel="external"
+             target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="social-link"
+             href="http://twitter.com/modaoperandi"
+             rel="external"
+             target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="social-link"
+             href="http://www.pinterest.com/modaoperandi"
+             rel="external"
+             target="_blank">
+            <i class="fab fa-pinterest"></i>
+          </a>
+        </p>
+        <p class="bottom">
+          <a class="social-link"
+             href="https://www.modaoperandi.com/privacy"
+             target="_blank"
+             data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/privacy&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNHY9nlNrdX_8oZ98PyT0TAydfW8dQ">
+            our Privacy Policy
+          </a>
+          <span>  |  </span>
+          <a href="https://www.modaoperandi.com/unsubscribe"
+             target="_blank"
+             data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/privacy&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNHY9nlNrdX_8oZ98PyT0TAydfW8dQ">
+            Manage your Email Preferences or Unsubscribe
+          </a>
+        </p>
+        <p >
+          Moda Operandi 315 Hudson Street, 5th Floor, New York, NY 10013
+        </p>
+      </article>
+    </section>
+    <!--</html>-->
+
+
 
     <table class="footer" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color:#f3f3f3" width="100%">
       <tbody>
@@ -574,7 +728,7 @@
       </tr>
       <tr>
         <td align="center">
-      <span style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#000000;line-height:16px;letter-spacing:0.02em">
+      <span style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#222222;line-height:16px;letter-spacing:0.02em">
         Free U.S. Shipping &amp; Returns
         &nbsp;
       <span class="WW">
@@ -591,15 +745,15 @@
       </tr>
       <tr>
         <td align="center" height="13">
-      <span style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#000000;line-height:16px;letter-spacing:0.02em;text-decoration:none">
+      <span style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#222222;line-height:16px;letter-spacing:0.02em;text-decoration:none">
         Contact Client Services
-        <span style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#000000;line-height:16px;letter-spacing:0.02em;text-decoration:none;text-decoration:none">
+        <span style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#222222;line-height:16px;letter-spacing:0.02em;text-decoration:none;text-decoration:none">
               1 (800) 707-9898
         </span>
         &nbsp; |&nbsp;
       </span>
           <span>
-        <a href="mailto:care@modaoperandi.com" style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#000000;line-height:16px;letter-spacing:0.02em;text-decoration:none;text-decoration:none;text-decoration:none" target="_blank">
+        <a href="mailto:care@modaoperandi.com" style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#222222;line-height:16px;letter-spacing:0.02em;text-decoration:none;text-decoration:none;text-decoration:none" target="_blank">
           care@modaoperandi.com
         </a>
       </span>
@@ -608,13 +762,13 @@
       <tr>
         <td align="center">
           <div style="margin:4vw 0;">
-      <span style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#000000;line-height:16px;letter-spacing:0.02em;text-decoration:none">
-          <a href="https://itunes.apple.com/us/app/moda-operandi/id781702094" style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#000000;line-height:16px;letter-spacing:0.02em;text-decoration:none;" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://itunes.apple.com/us/app/moda-operandi/id781702094&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNGM45IEqfGKqusg9w5XkK5LaIof1Q">
+      <span style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#222222;line-height:16px;letter-spacing:0.02em;text-decoration:none">
+          <a href="https://itunes.apple.com/us/app/moda-operandi/id781702094" style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#222222;line-height:16px;letter-spacing:0.02em;text-decoration:none;" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://itunes.apple.com/us/app/moda-operandi/id781702094&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNGM45IEqfGKqusg9w5XkK5LaIof1Q">
             Download the Moda App
         &nbsp; |&nbsp;
 
         <span>
-          <a href="https://www.modaoperandi.com/rewards" style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#000000;line-height:16px;letter-spacing:0.02em;text-decoration:none;" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/rewards&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNGIFjuaWZm8hniQPnKMSu4NWZQDJA">
+          <a href="https://www.modaoperandi.com/rewards" style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#222222;line-height:16px;letter-spacing:0.02em;text-decoration:none;" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/rewards&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNGIFjuaWZm8hniQPnKMSu4NWZQDJA">
        Join Moda Rewards
           </a>
         </span>
@@ -623,13 +777,13 @@
       </tr>
       <tr>
         <td align="center" height="13">
-          <p style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#000000;line-height:16px;letter-spacing:0.02em;text-decoration:none;text-decoration:none;text-decoration:none;text-decoration:none;text-decoration:none">
+          <p style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#222222;line-height:16px;letter-spacing:0.02em;text-decoration:none;text-decoration:none;text-decoration:none;text-decoration:none;text-decoration:none">
             View Our
-            <a href="https://www.modaoperandi.com/privacy" style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#000000;line-height:16px;letter-spacing:0.02em;text-decoration:none;text-decoration:none;text-decoration:none;text-decoration:none;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/privacy&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNHY9nlNrdX_8oZ98PyT0TAydfW8dQ">
+            <a href="https://www.modaoperandi.com/privacy" style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#222222;line-height:16px;letter-spacing:0.02em;text-decoration:none;text-decoration:none;text-decoration:none;text-decoration:none;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/privacy&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNHY9nlNrdX_8oZ98PyT0TAydfW8dQ">
               Privacy Policy
             </a>
             | Manage Your
-            <a href="https://www.modaoperandi.com/unsubscribe" style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#000000;line-height:16px;letter-spacing:0.02em;text-decoration:none;text-decoration:none;" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/privacy&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNHY9nlNrdX_8oZ98PyT0TAydfW8dQ">
+            <a href="https://www.modaoperandi.com/unsubscribe" style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#222222;line-height:16px;letter-spacing:0.02em;text-decoration:none;text-decoration:none;" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/privacy&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNHY9nlNrdX_8oZ98PyT0TAydfW8dQ">
               Email Preferences or Unsubscribe
               </span>
         </td>
@@ -639,7 +793,7 @@
       </tr>
       <tr>
         <td align="center" height="13">
-          <p style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#000000;line-height:16px;letter-spacing:0.02em;text-decoration:none;">
+          <p style="margin:0;margin-left:0px;margin-right:0px;padding:0;font-family:arial;color:#222222;line-height:16px;letter-spacing:0.02em;text-decoration:none;">
         <span>
           Moda Operandi
         </span>
