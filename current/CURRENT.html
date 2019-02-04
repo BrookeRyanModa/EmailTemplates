@@ -6,425 +6,315 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,600,600i,700,700i|Frank+Ruhl+Libre:300,400,500,700,900|Montserrat:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900|Prata|Old+Standard+TT:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style type="text/css">
+      html {
+        max-width: 100% !important;
+        background-color: #FFFFFF;
+      }
+      .footer span, .footer a, .footer p {
+        font-size: 1.45vw;
+      }
+      .footer td {
+        height: 1vw;
+      }
+      .content-subnavigation {
+        font-size: 1.35vw;
+        font-family: 'Arial', sans-serif;
+        letter-spacing: .25vw;
+        line-height: 3vw;
+      }
+      .content-subnavigation a:hover, .content-subnavigation a:active {
+        font-weight: bold;
+      }
+      .content-header {
+        margin-top: 2vw;
+      }
+      .content-header img {
+        width: 100%;
+        height: auto;
+      }
+      .LOGO img {
+        width: 40%;
+        height: auto;
+        align-self: center;
+        margin: 2vw 0;
+      }
+      .TRUNKSHOW_TOPPER {
+        padding-top: 3vw;
+        align-items: center;
+      }
+      .TRUNKSHOW_NAME {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 200;
+        letter-spacing: .65px;
+        margin-bottom: 1vw;
+      }
+      .SHOP_TRUNKSHOW_LINK {
+        margin-bottom: 2vw;
+        font-size: 2.25vw;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+      }
+      .SHOP_TRUNKSHOW_LINK i {
+        opacity: .55;
+      }
+      .SHOP_TRUNKSHOW_LINK:hover {
+        text-decoration: underline;
+      }
+      .PRE-ORDER_LINK {
+        display: inline-block;
+        font-size: 2.75vw;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 3vw 0;
+      }
+      .PRE-ORDER_LINK:hover, .PRE-ORDER_LINK:active {
+        font-weight: 500;
+      }
+      .PRE-ORDER_LINK i {
+        opacity: .55;
+      }
+      .HERO_IMAGE img {
+        width: 100%;
+        height: auto;
+        margin-top: 5vw;
+        opacity: 1;
+      }
+      .picks-header img {
+        margin: 3vw 0;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        float: left;
+      }
+      .picks-header h2 {
+        display: inline-block;
+        height: 100%;
+        width: 23%;
+        font-family: 'Prata', serif;
+        font-weight: 100;
+        font-size: 3.25vw;
+        text-align: center;
+      }
+      .PRODUCT_GRID {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 0 3.5vw;
+      }
+      .product {
+        box-sizing: border-box;
+        display: inline-block;
+        float: left;
+        width: 21vw;
+        height: 34.5vw;
+        margin: 0 1vw;
+        box-shadow: 2px 2px 10px 2px #C4A9A9;
+      }
+      .product img {
+        width: 100%;
+        height: auto;
+      }
+      .trunkshow-border {
+        width: 85%;
+        border-bottom: 1.25px solid lightgrey;
+        margin: 20px 7.5%;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width:100%;
+        margin:0;
+        padding:0
+      }
+      a {
+        color:#3c1315;
+        text-decoration:none;
+      }
+
+      /*FOOTER STYLE +++++++++++++++*/
+      .email-footer {
+        height: auto;
+        width: 100%;
+        padding: 5vw;
+        background-color: #E1E1E1;
+        text-align: center;
+        display: inline-block;
+      }
+      .client-services a:hover, .shipping-info a:hover {
+        font-weight: bold;
+      }
+      .CONTACT_INFO {
+        line-height: 2.5vw;
+        box-sizing: border-box;
+        color: #222222 !important;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+      }
+      .CONTACT_INFO p {
+        width: 100%;
+        font-size: 1.5vw;
+        letter-spacing: .05vw;
+      }
+      .CONTACT_INFO i {
+        opacity: .85;
+      }
+      .CONTACT_INFO p a {
+        color: #222222 !important;
+      }
+      .CONTACT_INFO p a :hover {
+        font-weight: bold;
+      }
+      .shipping-info, .client-services {
+        text-transform: uppercase;
+        letter-spacing: .1vw !important;
+        font-weight: 500;
+      }
+      .client-services i {
+        font-weight: 100;
+      }
+      .footer-border {
+        width: 100%;
+        margin: 3vw 0 2vw 0;
+        border-bottom: 1px solid rgba(34, 34, 34, .5);
+
+      }
+      .download-mo {
+        margin: 0 5px;
+        text-transform: uppercase;
+      }
+      .social-link {
+        margin: 0 5px;
+      }
+      .social-link i {
+        font-weight: 100;
+      }
+      .bottom {
+        margin-top: 2vw;
+        font-size: 1.25vw;
+      }
+      .bottom a:hover {
+        font-weight: 500;
+      }
+/*LATEST TS STYLING*/
+      .latest-ts-slice {
+        width: 70vw;
+        margin: 0 15vw;
+      }
+      .latest {
+        max-width: 100%;
+        height: auto;
+        padding: 5vw;
+        display: inline-block !important;
+        float: left;
+      }
+      .latest tr {
+        width: 100%;
+        max-width: 100%;
+      }
+      .latest-ts-img {
+        width: 45vw;
+        height: auto;
+      }
+
+
+      @media only screen and (max-width: 600px) {
+        .LOGO img {
+          width: 60%;
+          margin: 4vw 0 1vw 0;
+        }
+
+        .content-subnavigation {
+          font-size: 2vw;
+          line-height: 5vw;
+        }
+
+        .content-header {
+          margin: 3.5vw 0 2.5vw 0;
+        }
+
+        .product {
+          width: 42.5vw;
+          height: 68vw;
+          margin: 2vw;
+          box-shadow: 1.5px 1.5px 7.5px 1.5px #C4A9A9;
+        }
+
+        .product img {
+          width: 100%;
+          height: auto;
+        }
+
+        .PRE-ORDER_LINK {
+          font-size: 4.5vw;
+          font-weight: 400;
+        }
+
+        .TRUNKSHOW_NAME {
+          font-size: 5.5vw;
+          font-weight: 300;
+          letter-spacing: .65px;
+          margin-bottom: 1vw;
+        }
+
+        .SHOP_TRUNKSHOW_LINK {
+          font-size: 4vw;
+        }
+
+        .footer span, .footer a, .footer p {
+          font-size: 2.5vw;
+        }
+
+        .WW {
+          display: none;
+        }
+
+        .footer td {
+          height: 1vw;
+        }
+
+        .CONTACT_INFO {
+          line-height: 4vw;
+        }
+
+        .CONTACT_INFO p {
+          font-size: 2.5vw;
+          letter-spacing: .1vw;
+        }
+
+        .bottom {
+          margin-top: 2vw;
+          font-size: 1.25vw;
+        }
+
+
+
+      }
+    </style>
   </head>
-<style type="text/css">
-  html {
-    max-width: 100% !important;
-    background-color: #FFFFFF;
-  }
-  .footer span, .footer a, .footer p {
-    font-size: 1.45vw;
-  }
-  .footer td {
-    height: 1vw;
-  }
-  .content-subnavigation {
-    font-size: 1.35vw;
-    font-family: 'Arial', sans-serif;
-    letter-spacing: .25vw;
-    line-height: 3vw;
-  }
-  .content-subnavigation a:hover, .content-subnavigation a:active {
-    font-weight: bold;
-  }
-  .content-header {
-    margin-top: 2vw;
-  }
-  .content-header img {
-    width: 100%;
-    height: auto;
-  }
-  .LOGO img {
-    width: 40%;
-    height: auto;
-    align-self: center;
-    margin: 2vw 0;
-  }
-  .TRUNKSHOW_TOPPER {
-    padding-top: 3vw;
-    align-items: center;
-  }
-  .TRUNKSHOW_NAME {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 5vw;
-    font-weight: 200;
-    letter-spacing: .65px;
-    margin-bottom: 1vw;
-  }
-  .SHOP_TRUNKSHOW_LINK {
-    margin-bottom: 2vw;
-    font-size: 2.25vw;
-    text-align: center;
-    letter-spacing: 1px;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-  }
-  .SHOP_TRUNKSHOW_LINK i {
-    opacity: .55;
-  }
-  .SHOP_TRUNKSHOW_LINK:hover {
-    text-decoration: underline;
-  }
-  .PRE-ORDER_LINK {
-    display: inline-block;
-    font-size: 2.75vw;
-    text-align: center;
-    letter-spacing: 1px;
-    font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 3vw 0;
-  }
-  .PRE-ORDER_LINK:hover, .PRE-ORDER_LINK:active {
-    font-weight: 500;
-  }
-  .PRE-ORDER_LINK i {
-    opacity: .55;
-  }
-  .HERO_IMAGE img {
-    width: 100%;
-    height: auto;
-    margin-top: 5vw;
-    opacity: 1;
-  }
-  .picks-header img {
-    margin: 3vw 0;
-    padding: 0;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    float: left;
-  }
-  .picks-header h2 {
-    display: inline-block;
-    height: 100%;
-    width: 23%;
-    font-family: 'Prata', serif;
-    font-weight: 100;
-    font-size: 3.25vw;
-    text-align: center;
-  }
-  .PRODUCT_GRID {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 0 3.5vw;
-  }
-  .product {
-    box-sizing: border-box;
-    display: inline-block;
-    float: left;
-    width: 21vw;
-    height: 34.5vw;
-    margin: 0 1vw;
-    box-shadow: 2px 2px 10px 2px #C4A9A9;
-  }
-  .product img {
-    width: 100%;
-    height: auto;
-  }
-  .trunkshow-border {
-    width: 85%;
-    border-bottom: 1.25px solid lightgrey;
-    margin: 20px 7.5%;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
-  body {
-    width:100%;
-    margin:0;
-    padding:0
-  }
-  a {
-    color:#3c1315;
-    text-decoration:none;
-  }
-  /*table td {*/
-    /*border-collapse:collapse*/
-  /*}*/
-  /*table[class=mobile-only] img {*/
-    /*display: none !important;*/
-    /*width: 0;*/
-    /*height: 0;*/
-  /*}*/
-  /*td[class=desktop-only] img {*/
-    /*display: block !important;*/
-    /*width: 50%;*/
-    /*height: auto;*/
-  /*}*/
-
-  /*FOOTER STYLE +++++++++++++++*/
-  .email-footer {
-    height: auto;
-    width: 100%;
-    padding: 5vw;
-    background-color: #E1E1E1;
-    text-align: center;
-  }
-  .client-services a:hover, .shipping-info a:hover {
-    font-weight: bold;
-  }
-  .CONTACT_INFO {
-    line-height: 2.5vw;
-    box-sizing: border-box;
-    color: #222222 !important;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-  }
-  .CONTACT_INFO p {
-    width: 100%;
-    font-size: 1.5vw;
-    letter-spacing: .05vw;
-  }
-  .CONTACT_INFO i {
-    opacity: .85;
-  }
-  .CONTACT_INFO p a {
-    color: #222222 !important;
-  }
-  .CONTACT_INFO p a :hover {
-    font-weight: bold;
-  }
-  .shipping-info, .client-services {
-    text-transform: uppercase;
-    letter-spacing: .1vw !important;
-    font-weight: 500;
-  }
-  .client-services i {
-    font-weight: 100;
-  }
-  .footer-border {
-    width: 100%;
-    margin: 3vw 0 2vw 0;
-    border-bottom: 1px solid rgba(34, 34, 34, .5);
-
-  }
-  .download-mo {
-    margin: 0 5px;
-    text-transform: uppercase;
-  }
-  .social-link {
-    margin: 0 5px;
-  }
-  .social-link i {
-    font-weight: 100;
-  }
-  .bottom {
-    margin-top: 2vw;
-    font-size: 1.25vw;
-  }
-  .bottom a:hover {
-    font-weight: 500;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .LOGO img {
-      width: 60%;
-      margin: 4vw 0 1vw 0;
-    }
-
-    .content-subnavigation {
-      font-size: 2vw;
-      line-height: 5vw;
-    }
-
-    .content-header {
-      margin: 3.5vw 0 2.5vw 0;
-    }
-
-    .product {
-      width: 42.5vw;
-      height: 68vw;
-      margin: 2vw;
-      box-shadow: 1.5px 1.5px 7.5px 1.5px #C4A9A9;
-    }
-
-    .product img {
-      width: 100%;
-      height: auto;
-    }
-
-    .PRE-ORDER_LINK {
-      font-size: 4.5vw;
-      font-weight: 400;
-    }
-
-    .TRUNKSHOW_NAME {
-      font-size: 5.5vw;
-      font-weight: 300;
-      letter-spacing: .65px;
-      margin-bottom: 1vw;
-    }
-
-    .SHOP_TRUNKSHOW_LINK {
-      font-size: 4vw;
-    }
-
-    .footer span, .footer a, .footer p {
-      font-size: 2.5vw;
-    }
-
-    .WW {
-      display: none;
-    }
-
-    .footer td {
-      height: 1vw;
-    }
-
-    .CONTACT_INFO {
-      line-height: 4vw;
-    }
-
-    .CONTACT_INFO p {
-      font-size: 2.5vw;
-      letter-spacing: .1vw;
-    }
-
-    .bottom {
-      margin-top: 2vw;
-      font-size: 1.25vw;
-    }
-
-    .left-top-text {
-      display: none !important;
-    }
-
-    /*a[class=new] {*/
-      /*width: 0;*/
-      /*display: none !important;*/
-    /*}*/
-
-    /*td[class=desktop-only] img {*/
-      /*display: none !important;*/
-      /*width: 0;*/
-      /*height: 0;*/
-    /*}*/
-
-    /*table[class=email-subheader] td {*/
-      /*text-align: center;*/
-      /*padding: 0*/
-    /*}*/
-
-    /*td[class=hero-image] img,*/
-    /*td[class=collection-header-image] img,*/
-    /*td[class=product-listing] img,*/
-    /*td[class=trunkshow-listing] img,*/
-    /*td[class=promo-header-image] img {*/
-      /*width: 100%*/
-    /*}*/
-
-
-    /*td[class=trunkshow-header-half-image] img,*/
-    /*td[class=trunkshow-cell] img {*/
-      /*width: 100%*/
-    /*}*/
-
-    /*table[class=email-module-2x2] td {*/
-      /*width: 50%;*/
-      /*display: inline-block;*/
-      /*padding: 10px 0px 0px 0px;*/
-      /*box-sizing: border-box;*/
-      /*text-align: center;*/
-      /*height: auto*/
-    /*}*/
-
-    /*table[class=email-module-3x3] td img {*/
-      /*width: 100%;*/
-    /*}*/
-
-    /*table[class=email-module-3x3] td {*/
-      /*width: 33%;*/
-      /*display: inline-block;*/
-      /*padding: 10px 0px 0px 0px;*/
-      /*box-sizing: border-box;*/
-      /*text-align: center;*/
-      /*height: auto*/
-    /*}*/
-
-    /*table[class=email-module-2x2] td img {*/
-      /*width: 100%;*/
-    /*}*/
-
-
-    /*table[class=email-module-2x2-expand] td {*/
-      /*width: 100%;*/
-      /*display: inline-block;*/
-      /*padding: 5px 0px 0px 0px;*/
-      /*margin: 5px 0px 0px 0px;*/
-      /*box-sizing: border-box;*/
-      /*text-align: center;*/
-      /*height: auto*/
-    /*}*/
-
-    /*table[class=email-module-2x2-expand] td img {*/
-      /*width: 100%;*/
-    /*}*/
-
-    /*table[class=email-module-8] td {*/
-      /*width: 12.5%;*/
-      /*display: inline-block;*/
-      /*padding: 10px 0px 0px 0px;*/
-      /*box-sizing: border-box;*/
-      /*text-align: center;*/
-      /*height: auto*/
-    /*}*/
-
-    /*table[class=email-module-8] td img {*/
-      /*width: 100%;*/
-    /*}*/
-
-    /*table[class=module-center-text] td {*/
-      /*display: inline-block;*/
-      /*width: 100%*/
-    /*}*/
-
-
-    /*td[class=module-center] img {*/
-      /*width: 100%;*/
-      /*height: auto*/
-    /*}*/
-
-    /*td[class=module-left-handle] img,*/
-    /*td[class=module-right-handle] img {*/
-      /*display: none;*/
-      /*width: 0;*/
-      /*height: 0*/
-    /*}*/
-
-    /*td[class=promo-inner-content] img {*/
-      /*padding-top: 10px*/
-    /*}*/
-
-    /*table[class=emailwrapper],*/
-    /*table[class=emailcontent] {*/
-      /*width: 100% !important;*/
-    /*}*/
-
-    /*table[class=listed_items] img {*/
-      /*width: 100% !important;*/
-    /*}*/
-
-
-  }
-
-</style>
   <body class="EMAIL_CONTENT">
     <table align="center" border="0" cellpadding="0" cellspacing="0" class="emailcontent" width="100%">
       <tbody>
       <tr class="LOGO">
-        <td data-content-region-name="Region2" align="center" class="content-header">
-          <a href="${clickthrough('Logo','EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="text-decoration:none; font-family: 'Arial', sans-serif;" target="_blank"><img alt="Moda Operandi" border="0" src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5bd36ce168dab7522a224631/3bdcb581e3e3d39dd183aeb28d0c771a/WomensLogo_800.gif" /> </a></td>
+        <td data-content-region-name="Region2" align="center" class="content-header"><a href="${clickthrough('Logo','EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="text-decoration:none; font-family: 'Arial', sans-serif;" target="_blank"><img alt="Moda Operandi" border="0" src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5bd36ce168dab7522a224631/3bdcb581e3e3d39dd183aeb28d0c771a/WomensLogo_800.gif" /> </a></td>
       </tr>
       <tr class="SUB_NAVIGATION">
         <td data-content-region-name="Region1" align="center" class="content-subnavigation">
@@ -509,126 +399,197 @@
         </h3>
 
         <section class="trunkshow-border"></section>
-    </#data>
 
-    <#data WeeklyComplex as T><#filter ITEM_L="CURRENT"><#fields IMG_S1 BRAND_S1 IMG_S2 BRAND_S2 IMG_S3 BRAND_S3 IMG_S4 BRAND_S4 IMG_S5 BRAND_S5 IMG_S6 BRAND_S6 IMG_S7 BRAND_S7 IMG_S8 BRAND_S8 IMG_S9 BRAND_S9 IMG_S10 BRAND_S10 URL_S1 URL_S2 URL_S3 URL_S4 URL_S5 URL_S6 URL_S7 URL_S8 URL_S9 URL_S10>
-      <table align="center" border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
+      </#data>
+  <!--END OF PERSONALIZED DATA ^^^-->
+
+  <!--"LATEST TRUNKSHOWS" HEADER -->
+      <section class="latest-header">
+        <a href="${clickthrough('Latest_TS','EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+          <img class="latest-ts-slice" alt="Latest Trubnkshows" src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c2a832e115d521e21e75d00/e63f33294582966c5023443b1c5a5ab5/LatestTs.jpg" />
+        </a>
+      </section>
+
+<!--BEGINNING OF LATEST TS COMP DATA-->
+      <#data WeeklyComplex as T><#filter ITEM_L="CURRENT"><#fields IMG_S1 BRAND_S1 IMG_S2 BRAND_S2 IMG_S3 BRAND_S3 IMG_S4 BRAND_S4 IMG_S5 BRAND_S5 IMG_S6 BRAND_S6 IMG_S7 BRAND_S7 IMG_S8 BRAND_S8 IMG_S9 BRAND_S9 IMG_S10 BRAND_S10 URL_S1 URL_S2 URL_S3 URL_S4 URL_S5 URL_S6 URL_S7 URL_S8 URL_S9 URL_S10>
+
+<!--LATEST TS COMPONENT-->
+        <table class="latest" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+
+<!--TRUNKSHOW 1-->
+          <tr class="latest-ts-img">
             <td>
-              <!--LATEST TRUNKSHOWS HEADER-->
-              <a href="${clickthrough('Latest_TS','EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="text-decoration:none" target="_blank">
-                <img alt="M'oda'Operandi" border="0" src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c2a832e115d521e21e75d00/e63f33294582966c5023443b1c5a5ab5/LatestTs.jpg" />
+              <a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <img alt="${T.BRAND_S1}" src="${T.IMG_S1}" />
               </a>
             </td>
           </tr>
+
+          <tr class="latest-ts-name">
+            <td>
+              <a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"  target="_blank">
+                <span>
+                  ${T.BRAND_S1}
+                </span>
+              </a>
+            </td>
+          </tr>
+
+          <tr class="latest-ts-note">
+            <td>
+              <a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <span>
+                  ${TS1_NOTE}
+                </span>
+              </a>
+            </td>
+          </tr>
+<!--TRUNKSHOW 2-->
+          <tr>
+            <td width="100%">
+              <a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <img alt="${T.BRAND_S2}" />
+              </a>
+            </td>
+          </tr>
+
           <tr>
             <td>
-              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tbody>
-                <tr>
-                  <td>
-                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
-                      <tbody>
-                      <tr>
-                        <td width="100%"><a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"><img alt="${T.BRAND_S1}" border="0" src="${T.IMG_S1}" style="display: block;" width="295" /></a></td>
-                      </tr>
-                    <tr>
-                      <td align="center" style="padding-top:0.75rem;padding-bottom:0.25rem" valign="middle" width="100%"><a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="display:block;color:#3c1315;text-decoration:none" target="_blank"><span style="display:block;font-family:’Miller’, sans-serif;font-size:0.9rem;line-height:1.0rem">${T.BRAND_S1}</span> </a></td>
-                    </tr>
-                    <tr>
-                      <td align="center" height="15" style="padding:0rem 0rem 0.3rem 0rem" valign="middle" width="100%"><a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="display:block;color:#3c1315;text-decoration:none" target="_blank"><span style="display:block;font-size:0.63rem;line-height:0.6rem;color:#3c1315;font-family:’Miller’, sans-serif;letter-spacing:1px;text-transform:uppercase">${TS1_NOTE}</span> </a></td>
-                    </tr>
-                    </tbody>
-                  </table>
+              <a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <span>
+                  ${T.BRAND_S2}
+                </span>
+              </a>
+            </td>
+          </tr>
 
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
-                    <tbody>
-                    <tr>
-                      <td width="100%"><a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"><img alt="${T.BRAND_S2}" border="0" src="${T.IMG_S2}" style="display: block;" width="295" /></a></td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="padding-top:0.75rem;padding-bottom:0.25rem" valign="middle" width="100%"><a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="display:block;color:#3c1315;text-decoration:none" target="_blank"><span style="display:block;font-family:’Miller’, sans-serif;font-size:0.9rem;line-height:1.0rem">${T.BRAND_S2}</span> </a></td>
-                    </tr>
-                    <tr>
-                      <td align="center" height="15" style="padding:0rem 0rem 0.3rem 0rem" valign="middle" width="100%"><a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="display:block;color:#3c1315;text-decoration:none" target="_blank"><span style="display:block;font-size:0.63rem;line-height:0.66rem;color:#3c1315;font-family:’Miller’, sans-serif;letter-spacing:1px;text-transform:uppercase">${TS2_NOTE}</span> </a></td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
-                    <tbody>
-                    <tr>
-                      <td width="100%"><a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"><img alt="${T.BRAND_S3}" border="0" src="${T.IMG_S3}" style="display: block;" width="295" /></a></td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="padding-top:0.75rem;padding-bottom:0.25rem" valign="middle" width="100%"><a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="display:block;color:#3c1315;text-decoration:none" target="_blank"><span style="display:block;font-family:’Miller’, sans-serif;font-size:0.9rem;line-height:1.0rem">${T.BRAND_S3}</span> </a></td>
-                    </tr>
-                    <tr>
-                      <td align="center" height="15" style="padding:0rem 0rem 0.3rem 0rem" valign="middle" width="100%"><a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="display:block;color:#3c1315;text-decoration:none" target="_blank"><span style="display:block;font-size:0.63rem;line-height:0.66rem;color:#3c1315;font-family:’Miller’, sans-serif;letter-spacing:1px;text-transform:uppercase">${TS3_NOTE}</span> </a></td>
-                    </tr>
-                    </tbody>
-                  </table>
+          <tr class="latest-ts-note">
+            <td>
+              <a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <span>
+                  ${TS2_NOTE}
+                </span>
+              </a>
+            </td>
+          </tr>
+<!--TRUNKSHOW 3-->
+          <tr>
+            <td width="100%">
+              <a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <img alt="${T.BRAND_S3}" />
+              </a>
+            </td>
+          </tr>
 
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
-                    <tbody>
-                    <tr>
-                      <td width="100%"><a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"><img alt="${T.BRAND_S4}" border="0" src="${T.IMG_S4}" style="display: block;" width="295" /></a></td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="padding-top:0.75rem;padding-bottom:0.25rem" valign="middle" width="100%"><a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4)}" style="display:block;color:#3c1315;text-decoration:none" target="_blank"><span style="display:block;font-family:’Miller’, sans-serif;font-size:0.9rem;line-height:1.0rem">${T.BRAND_S4}</span> </a></td>
-                    </tr>
-                    <tr>
-                      <td align="center" height="15" style="padding:0rem 0rem 0.3rem 0rem" valign="middle" width="100%"><a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="display:block;color:#3c1315;text-decoration:none" target="_blank"><span style="display:block;font-size:0.63rem;line-height:0.66rem;color:#3c1315;font-family:’Miller’, sans-serif;letter-spacing:1px;text-transform:uppercase">${TS4_NOTE}</span> </a></td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
-                    <tbody>
-                    <tr>
-                      <td width="100%"><a href="${clickthrough('CurrentTS_5', 'URL='+T.URL_S5,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"><img alt="${T.BRAND_S5}" border="0" src="${T.IMG_S5}" style="display: block;" width="295" /></a></td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="padding-top:0.75rem;padding-bottom:0.25rem" valign="middle" width="100%"><a href="${clickthrough('CurrentTS_5', 'URL='+T.URL_S5,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="display:block;color:#3c1315;text-decoration:none" target="_blank"><span style="display:block;font-family:’Miller’, sans-serif;font-size:0.9rem;line-height:1.0rem">${T.BRAND_S5}</span> </a></td>
-                    </tr>
-                    <tr>
-                      <td align="center" height="15" style="padding:0rem 0rem 0.3rem 0rem" valign="middle" width="100%"><a href="${clickthrough('CurrentTS_5', 'URL='+T.URL_S5,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="display:block;color:#3c1315;text-decoration:none" target="_blank"><span style="display:block;font-size:0.63rem;line-height:0.66rem;color:#3c1315;font-family:’Miller’, sans-serif;letter-spacing:1px;text-transform:uppercase">${TS5_NOTE}</span> </a></td>
-                    </tr>
-                    </tbody>
-                  </table>
+          <tr>
+            <td>
+              <a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <span>
+                  ${T.BRAND_S3}
+                </span>
+              </a>
+            </td>
+          </tr>
 
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
-                    <tbody>
-                    <tr>
-                      <td width="100%"><a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"><img alt="${T.BRAND_S6}" border="0" src="${T.IMG_S6}" style="display: block;" width="295" /></a></td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="padding-top:0.75rem;padding-bottom:0.25rem" valign="middle" width="100%"><a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="display:block;color:#3c1315;text-decoration:none" target="_blank"><span style="display:block;font-family:’Miller’, sans-serif;font-size:0.9rem;line-height:1.0rem">${T.BRAND_S6}</span> </a></td>
-                    </tr>
-                    <tr>
-                      <td align="center" height="15" style="padding:0rem 0rem 0.3rem 0rem" valign="middle" width="100%"><a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="display:block;color:#3c1315;text-decoration:none" target="_blank"><span style="display:block;font-size:0.63rem;line-height:0.66rem;color:#3c1315;font-family:’Miller’, sans-serif;letter-spacing:1px;text-transform:uppercase">${TS6_NOTE}</span> </a></td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center" style="padding-top:5px;padding-bottom:5px;font-family:’Miller’, sans-serif;line-height:1px;font-size:1px"><a href="${clickthrough('Latest_TS','EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="text-decoration:none" target="_blank"><img alt="M'oda'Operandi" border="0" src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c4f865492cb5f0e67b7342f/d3d6f177a70e67a7021eef36664cf07e/SAL1_category_buttons_(1).gif" style="display:block;font-size:20px;line-height:20px;color:#3c1315;text-transform:uppercase" width="600" /></a></td>
-              </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
+          <tr class="latest-ts-note">
+            <td>
+              <a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <span>
+                  ${TS3_NOTE}
+                </span>
+              </a>
+            </td>
+          </tr>
+<!--TRUNKSHOW 4-->
+          <tr>
+            <td width="100%">
+              <a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <img alt="${T.BRAND_S4}" />
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <span>
+                  ${T.BRAND_S4}
+                </span>
+              </a>
+            </td>
+          </tr>
+
+          <tr class="latest-ts-note">
+            <td>
+              <a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <span>
+                  ${TS4_NOTE}
+                </span>
+              </a>
+            </td>
+          </tr>
+<!--TRUNKSHOW 5-->
+          <tr>
+            <td width="100%">
+              <a href="${clickthrough('CurrentTS_5', 'URL='+T.URL_S5,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <img alt="${T.BRAND_S5}" />
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="${clickthrough('CurrentTS_5', 'URL='+T.URL_S5,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <span>
+                  ${T.BRAND_S5}
+                </span>
+              </a>
+            </td>
+          </tr>
+
+          <tr class="latest-ts-note">
+            <td>
+              <a href="${clickthrough('CurrentTS_5', 'URL='+T.URL_S5,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <span>
+                  ${TS5_NOTE}
+                </span>
+              </a>
+            </td>
+          </tr>
+<!--TRUNKSHOW 6-->
+          <tr>
+            <td width="100%">
+              <a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <img alt="${T.BRAND_S6}" />
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <span>
+                  ${T.BRAND_S6}
+                </span>
+              </a>
+            </td>
+          </tr>
+
+          <tr class="latest-ts-note">
+            <td>
+              <a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <span>
+                  ${TS6_NOTE}
+                </span>
+              </a>
+            </td>
+          </tr>
+
         </tbody>
       </table>
     </#data>
+
     <section class="email-footer">
       <article class="CONTACT_INFO">
         <p class="shipping-info">
