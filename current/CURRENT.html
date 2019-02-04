@@ -53,19 +53,16 @@
         margin-bottom: 1vw;
       }
       .SHOP_TRUNKSHOW_LINK {
-        margin-bottom: 2vw;
-        font-size: 2.25vw;
+        font-size: 2.35vw;
         text-align: center;
         letter-spacing: 1px;
-        font-weight: 600;
+        font-weight: 400;
         font-family: 'Montserrat', sans-serif;
         width: 100%;
-      }
-      .SHOP_TRUNKSHOW_LINK i {
-        opacity: .55;
+        text-decoration: underline;
       }
       .SHOP_TRUNKSHOW_LINK:hover {
-        text-decoration: underline;
+        font-weight: 600;
       }
       .PRE-ORDER_LINK {
         display: inline-block;
@@ -77,12 +74,10 @@
         width: 100%;
         box-sizing: border-box;
         margin: 3vw 0;
+        text-decoration: underline;
       }
       .PRE-ORDER_LINK:hover, .PRE-ORDER_LINK:active {
         font-weight: 500;
-      }
-      .PRE-ORDER_LINK i {
-        opacity: .55;
       }
       .HERO_IMAGE img {
         width: 100%;
@@ -122,8 +117,9 @@
         width: 21vw;
         height: 34.5vw;
         margin: 0 1vw;
-        box-shadow: 2px 2px 10px 2px #C4A9A9;
+        /*box-shadow: 2px 2px 10px 2px #C4A9A9;*/
       }
+      
       .product img {
         width: 100%;
         height: auto;
@@ -194,7 +190,6 @@
         width: 100%;
         margin: 3vw 0 2vw 0;
         border-bottom: 1px solid rgba(34, 34, 34, .5);
-
       }
       .download-mo {
         margin: 0 5px;
@@ -223,19 +218,23 @@
         height: auto;
         display: inline-block !important;
         float: left !important;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 2vw;
+        text-align: center;
+        margin-bottom: 7vw;
       }
-
-
-
       .latest-ts-img img {
         display: inline-block !important;
         float: left;
         width: 50vw;
         padding: 2.5vw;
         box-sizing: border-box;
-
       }
-
+      .latest-ts-name:hover {
+        font-weight: 500;
+      }
 
       @media only screen and (max-width: 600px) {
         .LOGO img {
@@ -306,8 +305,6 @@
           font-size: 1.25vw;
         }
 
-
-
       }
     </style>
   </head>
@@ -353,55 +350,68 @@
     </table>
 
     <section class="content-header">
-      <img src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c4f241d86cbaa3a72760d99/46aa07770100081adb6f15af73a397a7/TS_Email_NewTS_03.jpg" alt="">
+      <a href="${clickthrough('Latest_TS','EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+        <img src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c4f241d86cbaa3a72760d99/46aa07770100081adb6f15af73a397a7/TS_Email_NewTS_03.jpg" alt="">
+      </a>
     </section>
 
     <#data 	ts_launching_joined as ts limit=5>
       <#filter CUSTOMER_ID=CUSTOMER_ID_>
         <#fields TS_NAME TS_SEASON TS_GENDER TS_CATEGORY DESIGNER_ID DESIGNER_NAME TS_START_DATE TS_END_DATE TS_ACTIVE_STATUS TS_URL TS_PRIMARY_IMAGE TS_SECONDARY_IMAGE TS_LOOK_1 TS_LOOK_2 TS_LOOK_3 TS_LOOK_4 PRODUCT_1 PRODUCT_2 PRODUCT_3 PRODUCT_4 EMAIL_ADDRESS WOMENS_DAILY_NEWSLETTER MENS_DAILY_NEWSLETTER >
         <section class="TRUNKSHOW_TOPPER">
-          <h1 class="TRUNKSHOW_NAME">
-            ${ts.TS_NAME} ${ts.TS_SEASON}
-          </h1>
-
+          <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}">
+            <h1 class="TRUNKSHOW_NAME">
+              ${ts.TS_NAME} ${ts.TS_SEASON}
+            </h1>
+          </a>
           <h3 class="SHOP_TRUNKSHOW_LINK">
-            <a href="${ts.TS_URL}">
-              SHOP TRUNKSHOW <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}">
+              SHOP TRUNKSHOW
             </a>
           </h3>
         </section>
 
         <section class="HERO_IMAGE">
-          <img src="${ts.TS_SECONDARY_IMAGE}" alt="${ts.TS_NAME}">
+          <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+            <img src="${ts.TS_SECONDARY_IMAGE}" alt="${ts.TS_NAME}">
+          </a>
         </section>
 
         <section class="picks-header">
+          <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
           <img src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c2a832e115d521e21e75d00/62dadafa54e8cc13843efe61410e0fe2/Editor_sPicks.jpg" alt="">
+          </a>
         </section>
 
         <section class="PRODUCT_GRID">
           <article class="product">
-            <img src="${ts.PRODUCT_1}" alt="product one">
+            <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+              <img src="${ts.PRODUCT_1}" alt="product one">
+            </a>
           </article>
           <article class="product">
-            <img src="${ts.PRODUCT_2}" alt="product two">
+            <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+              <img src="${ts.PRODUCT_2}" alt="product two">
+            </a>
           </article>
           <article class="product">
-            <img src="${ts.PRODUCT_3}" alt="product three">
+            <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+              <img src="${ts.PRODUCT_3}" alt="product three">
+            </a>
           </article>
           <article class="product">
-            <img src="${ts.PRODUCT_4}" alt="product four">
+            <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+              <img src="${ts.PRODUCT_4}" alt="product four">
+            </a>
           </article>
         </section>
 
         <h3 class="PRE-ORDER_LINK">
-          <a href="${ts.TS_URL}">
-            PRE-ORDER NOW <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+            SHOP TRUNKSHOW
           </a>
         </h3>
-
         <section class="trunkshow-border"></section>
-
       </#data>
   <!--END OF PERSONALIZED DATA ^^^-->
 
@@ -413,7 +423,9 @@
       </section>
 
 <!--BEGINNING OF LATEST TS COMP DATA-->
-      <#data WeeklyComplex as T><#filter ITEM_L="CURRENT"><#fields IMG_S1 BRAND_S1 IMG_S2 BRAND_S2 IMG_S3 BRAND_S3 IMG_S4 BRAND_S4 IMG_S5 BRAND_S5 IMG_S6 BRAND_S6 IMG_S7 BRAND_S7 IMG_S8 BRAND_S8 IMG_S9 BRAND_S9 IMG_S10 BRAND_S10 URL_S1 URL_S2 URL_S3 URL_S4 URL_S5 URL_S6 URL_S7 URL_S8 URL_S9 URL_S10>
+      <#data WeeklyComplex as T>
+        <#filter ITEM_L="CURRENT">
+          <#fields IMG_S1 BRAND_S1 IMG_S2 BRAND_S2 IMG_S3 BRAND_S3 IMG_S4 BRAND_S4 IMG_S5 BRAND_S5 IMG_S6 BRAND_S6 IMG_S7 BRAND_S7 IMG_S8 BRAND_S8 IMG_S9 BRAND_S9 IMG_S10 BRAND_S10 URL_S1 URL_S2 URL_S3 URL_S4 URL_S5 URL_S6 URL_S7 URL_S8 URL_S9 URL_S10>
 
 <!--LATEST TS COMPONENT-->
         <table class="latest" border="0" cellpadding="0" cellspacing="0">
@@ -423,28 +435,26 @@
           <tr class="latest-ts-img">
             <td>
               <a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                <!--<img alt="${T.BRAND_S1}" src="${T.IMG_S1}" />-->
-                <img src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5b9970551347827a3637ebdd/bcab9aff121054ce28d04b861abd5831/EMTile_JohannaOrtiz_(1).jpg" alt="">
+                <img alt="${T.BRAND_S1}" src="${T.IMG_S1}" />
               </a>
             </td>
             <td>
               <a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                <!--<img alt="${T.BRAND_S2}" />-->
-                <img src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5b9970551347827a3637ebdd/bcab9aff121054ce28d04b861abd5831/EMTile_JohannaOrtiz_(1).jpg" alt="">
+                <img alt="${T.BRAND_S2}" src="${T.IMG_S2}"/>
               </a>
             </td>
           </tr>
 
 <!--NAME ROW 1-->
-          <tr class="latest-ts-name">
-            <td>
+          <tr>
+            <td class="latest-ts-name">
               <a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"  target="_blank">
                 <span>
                   ${T.BRAND_S1}
                 </span>
               </a>
             </td>
-            <td>
+            <td class="latest-ts-name">
               <a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
                 <span>
                   ${T.BRAND_S2}
@@ -476,21 +486,19 @@
           <tr class="latest-ts-img">
             <td width="100%">
               <a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                <!--<img alt="${T.BRAND_S3}" />-->
-                <img src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5b9970551347827a3637ebdd/bcab9aff121054ce28d04b861abd5831/EMTile_JohannaOrtiz_(1).jpg" alt="">
+                <img alt="${T.BRAND_S3}" src="${T.IMG_S3}"/>
               </a>
             </td>
             <td width="100%">
               <a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                <!--<img alt="${T.BRAND_S4}" />-->
-                <img src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5b9970551347827a3637ebdd/bcab9aff121054ce28d04b861abd5831/EMTile_JohannaOrtiz_(1).jpg" alt="">
+                <img alt="${T.BRAND_S4}" src="${T.IMG_S4}"/>
               </a>
             </td>
           </tr>
 
 <!--NAME ROW 2-->
-          <tr class="latest-ts-name">
-            <td>
+          <tr>
+            <td class="latest-ts-name">
               <a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
                 <span>
                   ${T.BRAND_S3}
@@ -498,7 +506,7 @@
               </a>
             </td>
 
-            <td>
+            <td class="latest-ts-name">
               <a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
                 <span>
                   ${T.BRAND_S4}
@@ -530,22 +538,22 @@
           <tr class="latest-ts-img">
             <td>
               <a href="${clickthrough('CurrentTS_5', 'URL='+T.URL_S5,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                <!--<img alt="${T.BRAND_S5}" />-->
-                <img src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5b9970551347827a3637ebdd/bcab9aff121054ce28d04b861abd5831/EMTile_JohannaOrtiz_(1).jpg" alt="">
+                <img alt="${T.BRAND_S5}" src="${T.IMG_S5}"/>
+
               </a>
             </td>
 
             <td>
               <a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                <!--<img alt="${T.BRAND_S6}" />-->
-                <img src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5b9970551347827a3637ebdd/bcab9aff121054ce28d04b861abd5831/EMTile_JohannaOrtiz_(1).jpg" alt="">
+                <img alt="${T.BRAND_S6}" src="${T.IMG_S6}"/>
+
               </a>
             </td>
           </tr>
 
 <!--NAME ROW 3-->
-          <tr class="latest-ts-name">
-            <td>
+          <tr>
+            <td class="latest-ts-name">
               <a href="${clickthrough('CurrentTS_5', 'URL='+T.URL_S5,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
                 <span>
                   ${T.BRAND_S5}
@@ -553,7 +561,7 @@
               </a>
             </td>
 
-            <td>
+            <td class="latest-ts-name">
               <a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
                 <span>
                   ${T.BRAND_S6}
@@ -579,10 +587,10 @@
               </a>
             </td>
           </tr>
-
         </tbody>
       </table>
     </#data>
+
 
     <section class="email-footer">
       <article class="CONTACT_INFO">
@@ -615,10 +623,6 @@
           </a>
           <span>  |  </span>
           <a class="social-link"
-             href="mailto:care@modaoperandi.com">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a class="social-link"
              href="https://www.instagram.com/modaoperandi/"
              rel="external"
              target="_blank">
@@ -629,12 +633,6 @@
              rel="external"
              target="_blank">
             <i class="fab fa-facebook-f"></i>
-          </a>
-          <a class="social-link"
-             href="http://twitter.com/modaoperandi"
-             rel="external"
-             target="_blank">
-            <i class="fab fa-twitter"></i>
           </a>
           <a class="social-link"
              href="http://www.pinterest.com/modaoperandi"
@@ -648,7 +646,7 @@
              href="https://www.modaoperandi.com/privacy"
              target="_blank"
              data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/privacy&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNHY9nlNrdX_8oZ98PyT0TAydfW8dQ">
-            our Privacy Policy
+            Our Privacy Policy
           </a>
           <span>  |  </span>
           <a href="https://www.modaoperandi.com/unsubscribe"
