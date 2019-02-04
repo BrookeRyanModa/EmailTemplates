@@ -221,17 +221,19 @@
       .latest {
         max-width: 100%;
         height: auto;
-        padding: 5vw;
+        display: inline-block !important;
+        float: left !important;
+      }
+
+
+
+      .latest-ts-img img {
         display: inline-block !important;
         float: left;
-      }
-      .latest tr {
-        width: 100%;
-        max-width: 100%;
-      }
-      .latest-ts-img {
-        width: 45vw;
-        height: auto;
+        width: 50vw;
+        padding: 2.5vw;
+        box-sizing: border-box;
+
       }
 
 
@@ -417,15 +419,23 @@
         <table class="latest" border="0" cellpadding="0" cellspacing="0">
           <tbody>
 
-<!--TRUNKSHOW 1-->
+<!--IMG ROW 1-->
           <tr class="latest-ts-img">
             <td>
               <a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                <img alt="${T.BRAND_S1}" src="${T.IMG_S1}" />
+                <!--<img alt="${T.BRAND_S1}" src="${T.IMG_S1}" />-->
+                <img src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5b9970551347827a3637ebdd/bcab9aff121054ce28d04b861abd5831/EMTile_JohannaOrtiz_(1).jpg" alt="">
+              </a>
+            </td>
+            <td>
+              <a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <!--<img alt="${T.BRAND_S2}" />-->
+                <img src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5b9970551347827a3637ebdd/bcab9aff121054ce28d04b861abd5831/EMTile_JohannaOrtiz_(1).jpg" alt="">
               </a>
             </td>
           </tr>
 
+<!--NAME ROW 1-->
           <tr class="latest-ts-name">
             <td>
               <a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"  target="_blank">
@@ -434,27 +444,6 @@
                 </span>
               </a>
             </td>
-          </tr>
-
-          <tr class="latest-ts-note">
-            <td>
-              <a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                <span>
-                  ${TS1_NOTE}
-                </span>
-              </a>
-            </td>
-          </tr>
-<!--TRUNKSHOW 2-->
-          <tr>
-            <td width="100%">
-              <a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                <img alt="${T.BRAND_S2}" />
-              </a>
-            </td>
-          </tr>
-
-          <tr>
             <td>
               <a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
                 <span>
@@ -464,7 +453,16 @@
             </td>
           </tr>
 
+<!--NOTE ROW 1-->
           <tr class="latest-ts-note">
+            <td>
+              <a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <span>
+                  ${TS1_NOTE}
+                </span>
+              </a>
+            </td>
+
             <td>
               <a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
                 <span>
@@ -473,16 +471,25 @@
               </a>
             </td>
           </tr>
-<!--TRUNKSHOW 3-->
-          <tr>
+
+<!--IMG ROW 2-->
+          <tr class="latest-ts-img">
             <td width="100%">
               <a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                <img alt="${T.BRAND_S3}" />
+                <!--<img alt="${T.BRAND_S3}" />-->
+                <img src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5b9970551347827a3637ebdd/bcab9aff121054ce28d04b861abd5831/EMTile_JohannaOrtiz_(1).jpg" alt="">
+              </a>
+            </td>
+            <td width="100%">
+              <a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <!--<img alt="${T.BRAND_S4}" />-->
+                <img src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5b9970551347827a3637ebdd/bcab9aff121054ce28d04b861abd5831/EMTile_JohannaOrtiz_(1).jpg" alt="">
               </a>
             </td>
           </tr>
 
-          <tr>
+<!--NAME ROW 2-->
+          <tr class="latest-ts-name">
             <td>
               <a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
                 <span>
@@ -490,27 +497,7 @@
                 </span>
               </a>
             </td>
-          </tr>
 
-          <tr class="latest-ts-note">
-            <td>
-              <a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                <span>
-                  ${TS3_NOTE}
-                </span>
-              </a>
-            </td>
-          </tr>
-<!--TRUNKSHOW 4-->
-          <tr>
-            <td width="100%">
-              <a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                <img alt="${T.BRAND_S4}" />
-              </a>
-            </td>
-          </tr>
-
-          <tr>
             <td>
               <a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
                 <span>
@@ -520,7 +507,16 @@
             </td>
           </tr>
 
+<!--NOTE ROW 2-->
           <tr class="latest-ts-note">
+            <td>
+              <a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <span>
+                  ${TS3_NOTE}
+                </span>
+              </a>
+            </td>
+
             <td>
               <a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
                 <span>
@@ -529,20 +525,38 @@
               </a>
             </td>
           </tr>
-<!--TRUNKSHOW 5-->
-          <tr>
-            <td width="100%">
+
+<!--IMG ROW 3-->
+          <tr class="latest-ts-img">
+            <td>
               <a href="${clickthrough('CurrentTS_5', 'URL='+T.URL_S5,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                <img alt="${T.BRAND_S5}" />
+                <!--<img alt="${T.BRAND_S5}" />-->
+                <img src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5b9970551347827a3637ebdd/bcab9aff121054ce28d04b861abd5831/EMTile_JohannaOrtiz_(1).jpg" alt="">
+              </a>
+            </td>
+
+            <td>
+              <a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <!--<img alt="${T.BRAND_S6}" />-->
+                <img src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5b9970551347827a3637ebdd/bcab9aff121054ce28d04b861abd5831/EMTile_JohannaOrtiz_(1).jpg" alt="">
               </a>
             </td>
           </tr>
 
-          <tr>
+<!--NAME ROW 3-->
+          <tr class="latest-ts-name">
             <td>
               <a href="${clickthrough('CurrentTS_5', 'URL='+T.URL_S5,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
                 <span>
                   ${T.BRAND_S5}
+                </span>
+              </a>
+            </td>
+
+            <td>
+              <a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                <span>
+                  ${T.BRAND_S6}
                 </span>
               </a>
             </td>
@@ -556,27 +570,7 @@
                 </span>
               </a>
             </td>
-          </tr>
-<!--TRUNKSHOW 6-->
-          <tr>
-            <td width="100%">
-              <a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                <img alt="${T.BRAND_S6}" />
-              </a>
-            </td>
-          </tr>
 
-          <tr>
-            <td>
-              <a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                <span>
-                  ${T.BRAND_S6}
-                </span>
-              </a>
-            </td>
-          </tr>
-
-          <tr class="latest-ts-note">
             <td>
               <a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
                 <span>
