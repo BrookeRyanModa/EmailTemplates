@@ -97,20 +97,11 @@
           height: auto;
         }
 
-        .PRE-ORDER_LINK {
-          font-size: 4.5vw;
-          font-weight: 400;
-        }
-
         .TRUNKSHOW_NAME {
           font-size: 5.5vw;
           font-weight: 300;
           letter-spacing: .65px;
           margin-bottom: 1vw;
-        }
-
-        .SHOP_TRUNKSHOW_LINK {
-          font-size: 4vw;
         }
 
         .WW {
@@ -423,631 +414,651 @@
       }
 
   </style>
-</head>
-<body>
-<style>
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600|Roboto');
-</style>
-<!--MASTER TABLE-->
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="emailwrapper" style="background-color: #FFFFFF" width="100%">
-  <tbody>
-  <tr>
-    <td>
-      <table class="EMAIL_CONTENT"
-             align="center"
-             style="margin: 0;
-                      align-self: center;
-                      align-content: center;
-                      padding: 0;
-                      box-sizing: border-box;
-                      width: 100%;
-                      background-color: #FFFFFF;
-                      font-family: 'Montserrat', sans-serif;">
-        <tbody>
+  </head>
+  <body>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600|Roboto');
+    </style>
+<!--WRAPPER TABLE-->
+  <table align="center" border="0" cellpadding="0" cellspacing="0" class="emailwrapper" style="background-color: #FFFFFF; align-items: center;" width="100%">
+    <tbody>
+      <tr>
+        <td>
+<!--EMAIL CONTENT MAIN TABLE-->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="emailcontent"
+                 style="height: auto;
+                        width: 100%;
+                        max-width: 600px;
+                        text-transform: uppercase;
+                        font-family: 'Montserrat', sans-serif;
+                        text-align: center;">
 
-        </tbody>
+            <tbody>
+              <tr>
+                <td>
+<!--HEADER/NAV TABLE-->
+                  <table align="center" style="max-width: 600px;" border="0" cellpadding="0" cellspacing="0" class="emailcontent" width="100%">
+                    <tr class="LOGO">
+                      <td data-content-region-name="Region2" align="center" class="content-header">
+                        <a href="${clickthrough('Logo','EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="text-decoration:none; font-family: 'Arial', sans-serif;" target="_blank">
+                          <img alt="Moda Operandi" border="0" src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5bd36ce168dab7522a224631/3bdcb581e3e3d39dd183aeb28d0c771a/WomensLogo_800.gif"
+                               style="width: 70%;
+                                          max-width: 375px;
+                                          height: auto;
+                                          align-self: center;
+                                          margin: 25px 0 5px 0;"/>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr class="SUB_NAVIGATION">
+                      <td align="center" class="content-subnavigation" data-content-region-name="Region1"
+                          style="font-size: 10.5px;
+                                      font-family: 'Arial', sans-serif;
+                                      letter-spacing: 0.15em;
+                                      line-height: 30px;
+                                      opacity: .85;">
 
-        <tr>
-          <td>
-            <!--NAVIGATION TABLE-->
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="emailcontent" width="100%">
-              <tr class="LOGO">
-                <td data-content-region-name="Region2" align="center" class="content-header">
-                  <a href="${clickthrough('Logo','EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="text-decoration:none; font-family: 'Arial', sans-serif;" target="_blank">
-                    <img alt="Moda Operandi" border="0" src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5bd36ce168dab7522a224631/3bdcb581e3e3d39dd183aeb28d0c771a/WomensLogo_800.gif"
-                         style="width: 70%;
-                                    max-width: 375px;
+                            <span style="text-transform: uppercase;">
+                              <a class="clothing" href="${clickthrough('Trunkshows', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4.5px; color: #222222; text-decoration: none;" target="_blank">
+                                TRUNKSHOWS
+                              </a>
+                              <a class="clothing" href="${clickthrough('New', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4.5px; color: #222222; text-decoration: none;" target="_blank">
+                                NEW
+                              </a>
+                              <a class="clothing" href="${clickthrough('Clothing', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4.5px; color: #222222; text-decoration: none;" target="_blank">
+                                CLOTHING
+                              </a>
+                              <a class="new" href="${clickthrough('Shoes', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4.5px; color: #222222; text-decoration: none;" target="_blank">
+                                SHOES
+                              </a>
+                              <a class="new" href="${clickthrough('Handbags', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4.5px; color: #222222; text-decoration: none;" target="_blank">
+                                BAGS
+                              </a>
+                              <a class="clothing" href="${clickthrough('Jewelry', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4.5px; color: #222222; text-decoration: none;" target="_blank">
+                                JEWELRY
+                              </a>
+                              <a class="Clothing" href="${clickthrough('The_Edit', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4.5px; color: #222222; text-decoration: none;" target="_blank">
+                                THE EDIT
+                              </a>
+                            </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height="0" style="font-size: 1px; line-height: 1px;border-bottom: 1px solid #f4e6e6;" width="100%">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+<!--EMAIL CONTENT BODY - TS HEADER + TS REPEATING -->
+                  <table align="center" style="max-width: 600px;" border="0" cellpadding="0" cellspacing="0" class="emailcontent" width="100%">
+                    <tbody>
+                    <tr class="content-header">
+                      <!--NEW TRUNK SHOWS SELECTED FOR YOU-->
+                      <td>
+                        <a href="${clickthrough('Latest_TS','EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                          <img src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c4f241d86cbaa3a72760d99/46aa07770100081adb6f15af73a397a7/TS_Email_NewTS_03.jpg" alt=""
+                               style="width: 100%;
+                                        max-width: 100%;
+                                        margin-top: 10px;
+                                        height: auto;">
+                        </a>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tr>
+                      <td>
+                        <#data 	ts_launching_joined as ts limit=5>
+                        <#filter CUSTOMER_ID=CUSTOMER_ID_>
+                        <#fields TS_NAME TS_SEASON TS_GENDER TS_CATEGORY DESIGNER_ID DESIGNER_NAME TS_START_DATE TS_END_DATE TS_ACTIVE_STATUS TS_URL TS_PRIMARY_IMAGE TS_SECONDARY_IMAGE TS_LOOK_1 TS_LOOK_2 TS_LOOK_3 TS_LOOK_4 PRODUCT_1 PRODUCT_2 PRODUCT_3 PRODUCT_4 EMAIL_ADDRESS WOMENS_DAILY_NEWSLETTER MENS_DAILY_NEWSLETTER >
+
+                    <tr class="TRUNKSHOW_TOPPER"
+                        style="padding-top: 3vw;
+                               align-items: center;">
+
+                      <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                         style="text-decoration: none; color: #222222;">
+                        <h1 class="TRUNKSHOW_NAME"
+                            style="font-family: 'Montserrat', sans-serif;
+                                      text-transform: uppercase;
+                                      text-align: center;
+                                      font-size: 1.75em;
+                                      font-weight: 200;
+                                      letter-spacing: .02em;
+                                      margin-bottom: 15px;">
+
+                          ${ts.TS_NAME} ${ts.TS_SEASON}
+
+                        </h1>
+                      </a>
+                      <h3 class="SHOP_TRUNKSHOW_LINK"
+                          style="font-size: 1.2em;
+                                  text-align: center;
+                                  letter-spacing: 1px;
+                                  font-weight: 300;
+                                  font-family: 'Montserrat', sans-serif;
+                                  width: 100%;
+                                  text-decoration: underline;">
+                        <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                           style="text-decoration: none; color: #222222;">
+                          SHOP TRUNKSHOW
+                        </a>
+                      </h3>
+                    </tr>
+
+                    <tr class="HERO_IMAGE">
+                      <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                        <img src="${ts.TS_SECONDARY_IMAGE}" alt="${ts.TS_NAME}"
+                             style="width: 100% !important;
                                     height: auto;
-                                    align-self: center;
-                                    margin: 25px 0 5px 0;"/>
-                  </a>
-                </td>
-              </tr>
-              <tr class="SUB_NAVIGATION">
-                <td align="center" class="content-subnavigation" data-content-region-name="Region1"
-                    style="font-size: 10.5px;
-                                font-family: 'Arial', sans-serif;
-                                letter-spacing: 0.15em;
-                                line-height: 30px;
-                                opacity: .85;">
+                                    opacity: 1;">
+                      </a>
+                    </tr>
 
-                      <span style="text-transform: uppercase;">
-                        <a class="clothing" href="${clickthrough('Trunkshows', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4.5px; color: #222222; text-decoration: none;" target="_blank">
-                          TRUNKSHOWS
-                        </a>
-                        <a class="clothing" href="${clickthrough('New', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4.5px; color: #222222; text-decoration: none;" target="_blank">
-                          NEW
-                        </a>
-                        <a class="clothing" href="${clickthrough('Clothing', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4.5px; color: #222222; text-decoration: none;" target="_blank">
-                          CLOTHING
-                        </a>
-                        <a class="new" href="${clickthrough('Shoes', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4.5px; color: #222222; text-decoration: none;" target="_blank">
-                          SHOES
-                        </a>
-                        <a class="new" href="${clickthrough('Handbags', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4.5px; color: #222222; text-decoration: none;" target="_blank">
-                          BAGS
-                        </a>
-                        <a class="clothing" href="${clickthrough('Jewelry', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4.5px; color: #222222; text-decoration: none;" target="_blank">
-                          JEWELRY
-                        </a>
-                        <a class="Clothing" href="${clickthrough('The_Edit', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4.5px; color: #222222; text-decoration: none;" target="_blank">
-                          THE EDIT
-                        </a>
-                      </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td height="0" style="font-size: 1px; line-height: 1px;border-bottom: 1px solid #f4e6e6;" width="100%">
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table align="center" border="0" cellpadding="0" cellspacing="0" class="emailcontent" width="100%">
-                <tr class="content-header">
-                  <!--NEW TRUNK SHOWS SELECTED FOR YOU-->
-                  <td>
-                    <a href="${clickthrough('Latest_TS','EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                      <img src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c4f241d86cbaa3a72760d99/46aa07770100081adb6f15af73a397a7/TS_Email_NewTS_03.jpg" alt=""
-                           style="width: 100%;
+                    <tr class="picks-header">
+                      <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                        <img src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c2a832e115d521e21e75d00/62dadafa54e8cc13843efe61410e0fe2/Editor_sPicks.jpg" alt=""
+                             style="margin: 3vw 0;
+                                    padding: 0;
+                                    width: 100%;
                                     max-width: 100%;
-                                    margin-top: 10px;
-                                    height: auto;">
-                    </a>
+                                    height: auto;
+                                    float: left;">
+                      </a>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="emailcontent" width="100%">
+                          <tbody>
+                          <tr class="PRODUCT_GRID"
+                              style="width: 100%;
+                                      max-width: 100%;
+                                      height: auto;
+                                      box-sizing: border-box;
+                                      padding: 0 3.5vw;">
 
-                  </td>
-                </tr>
+                            <td class="product"
+                                style="box-sizing: border-box;
+                                        width: 21%;
+                                        height: auto;
+                                        margin: 0 1%;">
 
-                <#data 	ts_launching_joined as ts limit=5>
-                <#filter CUSTOMER_ID=CUSTOMER_ID_>
-                <#fields TS_NAME TS_SEASON TS_GENDER TS_CATEGORY DESIGNER_ID DESIGNER_NAME TS_START_DATE TS_END_DATE TS_ACTIVE_STATUS TS_URL TS_PRIMARY_IMAGE TS_SECONDARY_IMAGE TS_LOOK_1 TS_LOOK_2 TS_LOOK_3 TS_LOOK_4 PRODUCT_1 PRODUCT_2 PRODUCT_3 PRODUCT_4 EMAIL_ADDRESS WOMENS_DAILY_NEWSLETTER MENS_DAILY_NEWSLETTER >
+                              <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                                <img src="${ts.PRODUCT_1}" alt="product one"
+                                     style="width: 100%; height: auto;">
+                              </a>
+                            </td>
+                            <td class="product"
+                                style="box-sizing: border-box;
+                                        width: 21%;
+                                        height: auto;
+                                        margin: 0 1%;">
 
-                <tr class="TRUNKSHOW_TOPPER"
-                    style="padding-top: 3vw;
-                         align-items: center;">
+                              <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                                <img src="${ts.PRODUCT_2}" alt="product two"
+                                     style="width: 100%; height: auto;">
 
-                  <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
-                     style="text-decoration: none; color: #222222;">
-                    <h1 class="TRUNKSHOW_NAME"
-                        style="font-family: 'Montserrat', sans-serif;
-                                text-transform: uppercase;
-                                text-align: center;
-                                font-size: 40px;
-                                font-weight: 200;
-                                letter-spacing: .65px;
-                                margin-bottom: 15px;">
+                              </a>
+                            </td>
+                            <td class="product"
+                                style="box-sizing: border-box;
+                                        width: 21%;
+                                        height: auto;
+                                        margin: 0 1%;">
 
-                      ${ts.TS_NAME} ${ts.TS_SEASON}
+                              <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                                <img src="${ts.PRODUCT_3}" alt="product three"
+                                     style="width: 100%; height: auto;">
 
-                    </h1>
-                  </a>
-                  <h3 class="SHOP_TRUNKSHOW_LINK"
-                      style="font-size: 2.35vw;
-                            text-align: center;
-                            letter-spacing: 1px;
-                            font-weight: 400;
-                            font-family: 'Montserrat', sans-serif;
-                            width: 100%;
-                            text-decoration: underline;">
-                    <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
-                       style="text-decoration: none; color: #222222;">
-                      SHOP TRUNKSHOW
-                    </a>
-                  </h3>
-                </tr>
+                              </a>
+                            </td>
+                            <td class="product"
+                                style="box-sizing: border-box;
+                                        width: 21%;
+                                        height: auto;
+                                        margin: 0 1%;">
 
-                <tr class="HERO_IMAGE">
-                  <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                    <img src="${ts.TS_SECONDARY_IMAGE}" alt="${ts.TS_NAME}"
-                         style="width: 100% !important;
-                              height: auto;
-                              margin-top: 5vw;
-                              opacity: 1;">
-                  </a>
-                </tr>
+                              <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                                <img src="${ts.PRODUCT_4}" alt="product four"
+                                     style="width: 100%; height: auto;">
 
-                <tr class="picks-header">
-                  <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                    <img src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c2a832e115d521e21e75d00/62dadafa54e8cc13843efe61410e0fe2/Editor_sPicks.jpg" alt=""
-                         style="margin: 3vw 0;
-                              padding: 0;
+                              </a>
+                            </td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="emailcontent" width="100%">
+                          <tr class="PRE-ORDER_LINK" align="center">
+                            <td width="100%">
+                              <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank" style="text-decoration: none;
+                                             color: #222222;
+                                             font-size: 1.2em;
+                                             line-height: 2.5em;
+                                             text-align: center;
+                                             letter-spacing: 1px;
+                                             font-weight: 300;
+                                             font-family: 'Montserrat', sans-serif;
+                                             width: 100%;
+                                             height: auto;
+                                             text-decoration: underline;">
+                                SHOP TRUNKSHOW
+                              </a>
+                            </td>
+                          </tr>
+
+                          <tr class="trunkshow-border">
+                            <td>
+                              <div style="width: 85%;
+                                 border-bottom: 1.25px solid lightgrey;
+                                 margin: 15px 7.5%;">
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </#data>
+            <tr>
+              <td>
+<!--LATEST TS COMPONENT, BORROWED-->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="emailcontent" width="100%"
+                       style="height: auto;
                               width: 100%;
-                              max-width: 100%;
-                              height: auto;
-                              float: left;">
-                  </a>
-                </tr>
-
-              </table>
-            </td>
-          </tr>
-              <tr>
-            <td>
-              <table align="center" border="0" cellpadding="0" cellspacing="0" class="emailcontent" width="100%">
-                <tr class="PRODUCT_GRID"
-                    style="width: 100%;
-                              max-width: 100%;
-                              height: auto;
                               box-sizing: border-box;
-                              padding: 0 3.5vw;">
-
-                  <td class="product"
-                      style="box-sizing: border-box;
-                                display: inline-block;
-                                float: left;
-                                width: 21%;
-                                height: auto;
-                                margin: 0 1%;">
-
-                    <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                      <img src="${ts.PRODUCT_1}" alt="product one"
-                           style="width: 100%; height: auto;">
-                    </a>
-                  </td>
-                  <td class="product"
-                      style="box-sizing: border-box;
-                                display: inline-block;
-                                float: left;
-                                width: 21%;
-                                height: auto;
-                                margin: 0 1%;">
-
-                    <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                      <img src="${ts.PRODUCT_2}" alt="product two"
-                           style="width: 100%; height: auto;">
-
-                    </a>
-                  </td>
-                  <td class="product"
-                      style="box-sizing: border-box;
-                                display: inline-block;
-                                float: left;
-                                width: 21%;
-                                height: auto;
-                                margin: 0 1%;">
-
-                    <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                      <img src="${ts.PRODUCT_3}" alt="product three"
-                           style="width: 100%; height: auto;">
-
-                    </a>
-                  </td>
-                  <td class="product"
-                      style="box-sizing: border-box;
-                                display: inline-block;
-                                float: left;
-                                width: 21%;
-                                height: auto;
-                                margin: 0 1%;">
-
-                    <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                      <img src="${ts.PRODUCT_4}" alt="product four"
-                           style="width: 100%; height: auto;">
-
-                    </a>
-                  </td>
-                </tr>
-
-                <tr class="PRE-ORDER_LINK" align="center" height="40">
-                  <td>
-                    <a href="${clickthrough('ShopTrunkshow', 'URL='+ts.TS_URL, 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank"
-                       style="font-size: 20px;
-                                text-align: center;
-                                letter-spacing: 1px;
-                                font-weight: 300;
-                                font-family: 'Montserrat', sans-serif;
-                                width: 100%;
-                                text-decoration: none;
-                                text-decoration: underline;
-                                color: #222222;">
-
-                      SHOP TRUNKSHOW
-
-                    </a>
-                  </td>
-                </tr>
-
-                <tr class="trunkshow-border"
-                    style="width: 85%;
-                           border-bottom: 1.25px solid lightgrey;
-                           margin: 20px 7.5%;">
-                </tr>
-              </table>
-
-            </td>
-          </tr>
-</#data>
-            </td>
-          </tr>
-          <tr>
-          <td>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="emailcontent" width="100%"
-                   style="height: auto;
-                                    display: inline-block !important;
-                                    float: left !important;
-                                    text-transform: uppercase;
-                                    font-family: 'Montserrat', sans-serif;
-                                    font-weight: 300;
-                                    font-size: 20px;
-                                    text-align: center;
-                                    margin-bottom: 25px;">
-              <tbody>
-              <tr class="latest-header">
-                <td>
-                  <a href="${clickthrough('Latest_TS','EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
-                    <img class="latest-ts-slice" alt="Latest Trubnkshows" src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c2a832e115d521e21e75d00/e63f33294582966c5023443b1c5a5ab5/LatestTs.jpg"
-                         style="width: 70%;
-                                margin: 0 15%;"/>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <#data WeeklyComplex as T><#filter ITEM_L="CURRENT"><#fields IMG_S1 BRAND_S1 IMG_S2 BRAND_S2 IMG_S3 BRAND_S3 IMG_S4 BRAND_S4 IMG_S5 BRAND_S5 IMG_S6 BRAND_S6 IMG_S7 BRAND_S7 IMG_S8 BRAND_S8 IMG_S9 BRAND_S9 IMG_S10 BRAND_S10 URL_S1 URL_S2 URL_S3 URL_S4 URL_S5 URL_S6 URL_S7 URL_S8 URL_S9 URL_S10>
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
-                    <!--table one-->
-                    <tbody>
+                              padding: 0 2% 5% 2%;
+                              max-width: 600px;
+                              text-transform: uppercase;
+                              font-family: 'Montserrat', sans-serif;
+                              font-weight: 300;
+                              font-size: 1em;
+                              text-align: center;">
+                  <tbody>
+                  <tr class="latest-header">
+                    <td>
+                      <a href="${clickthrough('Latest_TS','EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" target="_blank">
+                        <img class="latest-ts-slice" alt="Latest Trubnkshows" src="https://trello-attachments.s3.amazonaws.com/5c2a52bb9760cb41cd540adf/5c2a832e115d521e21e75d00/e63f33294582966c5023443b1c5a5ab5/LatestTs.jpg"
+                             style="width: 70%;
+                                    margin: 0 15%;"/>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <#data WeeklyComplex as T><#filter ITEM_L="CURRENT"><#fields IMG_S1 BRAND_S1 IMG_S2 BRAND_S2 IMG_S3 BRAND_S3 IMG_S4 BRAND_S4 IMG_S5 BRAND_S5 IMG_S6 BRAND_S6 IMG_S7 BRAND_S7 IMG_S8 BRAND_S8 IMG_S9 BRAND_S9 IMG_S10 BRAND_S10 URL_S1 URL_S2 URL_S3 URL_S4 URL_S5 URL_S6 URL_S7 URL_S8 URL_S9 URL_S10>
+                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
+                        <!--ts one-->
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                                 target="_blank">
+                                <img alt="${T.BRAND_S1}"
+                                     src="${T.IMG_S1}"
+                                     style="display: inline-block !important;
+                                            float: left;
+                                            width: 100%;
+                                            box-sizing: border-box;
+                                            padding: 2%;"/>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="latest-ts-name">
+                              <a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                                 target="_blank"
+                                 style="text-decoration: none! important;
+                                        color: #222222;
+                                        box-sizing: border-box;
+                                        padding: 2%;">
+                                <span>
+                                  ${T.BRAND_S1}
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          </tbody>
+                        </table>
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
+                          <!--ts two-->
+                          <tbody>
+                          <tr>
+                            <td>
+                              <a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                                 target="_blank">
+                                <img alt="${T.BRAND_S2}"
+                                     src="${T.IMG_S2}"
+                                     style="display: inline-block !important;
+                                            float: left;
+                                            width: 100%;
+                                            box-sizing: border-box;
+                                            padding: 2%;"/>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="latest-ts-name">
+                              <a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                                 target="_blank"
+                                 style="text-decoration: none! important;
+                                        color: #222222;
+                                        box-sizing: border-box;
+                                        padding: 2%;">
+                                <span>
+                                  ${T.BRAND_S2}
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <!--ROW TWO-->
                     <tr>
                       <td>
-                        <a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
-                           target="_blank">
-                          <img alt="${T.BRAND_S1}"
-                               src="${T.IMG_S1}"
-                               style="display: inline-block !important;
-                                          float: left;
-                                          width: 100%;
-                                          box-sizing: border-box;"/>
-                        </a>
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
+                          <!--ts three-->
+                          <tbody>
+                          <tr>
+                            <td>
+                              <a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                                 target="_blank">
+                                <img alt="${T.BRAND_S3}"
+                                     src="${T.IMG_S3}"
+                                     style="display: inline-block !important;
+                                            float: left;
+                                            width: 100%;
+                                            box-sizing: border-box;
+                                            padding: 2%;"/>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="latest-ts-name">
+                              <a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                                 target="_blank"
+                                 style="text-decoration: none! important;
+                                        color: #222222;
+                                        box-sizing: border-box;
+                                        padding: 2%;">
+
+                                <span>
+                                  ${T.BRAND_S3}
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          </tbody>
+                        </table>
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
+                          <!--ts four-->
+                          <tbody>
+                          <tr>
+                            <td>
+                              <a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                                 target="_blank">
+                                <img alt="${T.BRAND_S4}"
+                                     src="${T.IMG_S4}"
+                                     style="display: inline-block !important;
+                                            float: left;
+                                            width: 100%;
+                                            box-sizing: border-box;
+                                            padding: 2%;"/>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="latest-ts-name">
+                              <a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                                 target="_blank"
+                                 style="text-decoration: none! important;
+                                        color: #222222;
+                                        box-sizing: border-box;
+                                        padding: 2%;">
+                                <span>
+                                  ${T.BRAND_S4}
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          </tbody>
+                        </table>
                       </td>
                     </tr>
-                    <tr>
-                      <td class="latest-ts-name">
-                        <a href="${clickthrough('CurrentTS_1', 'URL='+T.URL_S1,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
-                           target="_blank"
-                           style="text-decoration: none! important;
-                                      color: #222222;">
-                                  <span>
-                                    ${T.BRAND_S1}
-                                  </span>
-                        </a>
-                      </td>
-                    </tr>
-                    </tbody>
-                  </table>
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
-                    <!--table two-->
-                    <tbody>
-                    <tr>
-                      <td>
-                        <a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
-                           target="_blank">
-                          <img alt="${T.BRAND_S2}"
-                               src="${T.IMG_S2}"
-                               style="display: inline-block !important;
-                                          float: left;
-                                          width: 100%;
-                                          box-sizing: border-box;"/>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="latest-ts-name">
-                        <a href="${clickthrough('CurrentTS_2', 'URL='+T.URL_S2,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
-                           target="_blank"
-                           style="text-decoration: none! important;
-                                      color: #222222;">
-                                  <span>
-                                    ${T.BRAND_S2}
-                                  </span>
-                        </a>
-                      </td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!--ROW TWO-->
-              <tr>
-                <td>
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
-                    <!--table three-->
-                    <tbody>
-                    <tr>
-                      <td>
-                        <a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
-                           target="_blank">
-                          <img alt="${T.BRAND_S3}"
-                               src="${T.IMG_S3}"
-                               style="display: inline-block !important;
-                                          float: left;
-                                          width: 100%;
-                                          box-sizing: border-box;"/>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="latest-ts-name">
-                        <a href="${clickthrough('CurrentTS_3', 'URL='+T.URL_S3,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
-                           target="_blank"
-                           style="text-decoration: none! important;
-                                      color: #222222;">
-                                  <span>
-                                    ${T.BRAND_S3}
-                                  </span>
-                        </a>
-                      </td>
-                    </tr>
-                    </tbody>
-                  </table>
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
-                    <!--table four-->
-                    <tbody>
+                    <!--ROW THREE-->
                     <tr>
                       <td>
-                        <a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
-                           target="_blank">
-                          <img alt="${T.BRAND_S4}"
-                               src="${T.IMG_S4}"
-                               style="display: inline-block !important;
-                                          float: left;
-                                          width: 100%;
-                                          box-sizing: border-box;"/>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="latest-ts-name">
-                        <a href="${clickthrough('CurrentTS_4', 'URL='+T.URL_S4,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
-                           target="_blank"
-                           style="text-decoration: none! important;
-                                      color: #222222;">
-                                  <span>
-                                    ${T.BRAND_S4}
-                                  </span>
-                        </a>
-                      </td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!--ROW THREE-->
-              <tr>
-                <td>
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
-                    <!--table five-->
-                    <tbody>
-                    <tr>
-                      <td>
-                        <a href="${clickthrough('CurrentTS_5', 'URL='+T.URL_S5,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
-                           target="_blank">
-                          <img alt="${T.BRAND_S5}"
-                               src="${T.IMG_S5}"
-                               style="display: inline-block !important;
-                                        float: left;
-                                        width: 100%;
-                                        box-sizing: border-box;"/>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="latest-ts-name">
-                        <a href="${clickthrough('CurrentTS_5', 'URL='+T.URL_S5,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
-                           target="_blank"
-                           style="text-decoration: none! important;
-                                    color: #222222;">
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
+                          <!--ts five-->
+                          <tbody>
+                          <tr>
+                            <td>
+                              <a href="${clickthrough('CurrentTS_5', 'URL='+T.URL_S5,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                                 target="_blank">
+                                <img alt="${T.BRAND_S5}"
+                                     src="${T.IMG_S5}"
+                                     style="display: inline-block !important;
+                                            float: left;
+                                            width: 100%;
+                                            box-sizing: border-box;
+                                            padding: 2%;"/>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="latest-ts-name">
+                              <a href="${clickthrough('CurrentTS_5', 'URL='+T.URL_S5,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                                 target="_blank"
+                                 style="text-decoration: none! important;
+                                        color: #222222;
+                                        box-sizing: border-box;
+                                        padding: 2%;">
+
                                 <span>
                                   ${T.BRAND_S5}
                                 </span>
-                        </a>
-                      </td>
-                    </tr>
-                    </tbody>
-                  </table>
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
-                    <!--table six-->
-                    <tbody>
-                    <tr>
-                      <td>
-                        <a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
-                           target="_blank">
-                          <img alt="${T.BRAND_S6}"
-                               src="${T.IMG_S6}"
-                               style="display: inline-block !important;
-                                        float: left;
-                                        width: 100%;
-                                        box-sizing: border-box;"/>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="latest-ts-name">
-                        <a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
-                           target="_blank"
-                           style="text-decoration: none! important;
-                                    color: #222222;">
+                              </a>
+                            </td>
+                          </tr>
+                          </tbody>
+                        </table>
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="50%">
+                          <!--ts six-->
+                          <tbody>
+                          <tr>
+                            <td>
+                              <a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                                 target="_blank">
+                                <img alt="${T.BRAND_S6}"
+                                     src="${T.IMG_S6}"
+                                     style="display: inline-block !important;
+                                            float: left;
+                                            width: 100%;
+                                            box-sizing: border-box;
+                                            padding: 2%;"/>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="latest-ts-name">
+                              <a href="${clickthrough('CurrentTS_6', 'URL='+T.URL_S6,'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                                 target="_blank"
+                                 style="text-decoration: none! important;
+                                        color: #222222;
+                                        box-sizing: border-box;
+                                        padding: 2%;">
                                 <span>
                                   ${T.BRAND_S6}
                                 </span>
-                        </a>
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  </#data>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+<!--EMAIL FOOOTER-->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="email-footer"
+                       style="height: auto;
+                                   width: 100%;
+                                   padding: 15px;
+                                   background-color: #E1E1E1;
+                                   text-align: center;
+                                   line-height: 18px;
+                                   box-sizing: border-box;
+                                   color: #222222 !important;
+                                   font-family: 'Roboto', sans-serif;
+                                   font-weight: 400;">
+
+                  <tr class="CONTACT_INFO">
+
+                    <td class="shipping-info"
+                        style="width: 100%;
+                                   font-size: 11px;
+                                   letter-spacing: .3px;">
+
+                      Free U.S. Shipping & Returns&nbsp;&nbsp;|&nbsp;
+                      <span class="WW">Worldwide Shipping for $20 or Less&nbsp;&nbsp;|&nbsp;</span>
+                      NYC Same-Day Delivery
+                    </td>
+                  </tr>
+                  <tr class="CONTACT_INFO">
+                    <td class="client-services"
+                        style="width: 100%;
+                                   font-size: 11px;
+                                   letter-spacing: .3px;">
+
+                      <a href="mailto:care@modaoperandi.com" data-text="Email Client Services"
+                         style="text-decoration: none! important;
+                              color: #222222;">
+                        Contact Client Services
+                        <i class="fas fa-envelope"
+                           style="opacity: .85;">
+                        </i>
+                      </a>
+                      <span class="WW">&nbsp;&nbsp;|&nbsp;1 (800) 707-9898</span>
+                      <span>  |  </span>
+                      <a href="https://www.modaoperandi.com/rewards"
+                         target="_blank"
+                         data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/rewards&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNGIFjuaWZm8hniQPnKMSu4NWZQDJA"
+                         style="text-decoration: none! important;
+                                    color: #222222;">
+                        Join Moda Rewards
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr class="footer-border"></tr>
+
+                  <tr class="CONTACT_INFO">
+                    <td class="bottom"
+                        style="width: 100%;
+                                   font-size: 10px;
+                                   letter-spacing: .3px;">
+
+                      <a class="download-mo"
+                         href="https://itunes.apple.com/us/app/moda-operandi/id781702094"
+                         target="_blank"
+                         data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://itunes.apple.com/us/app/moda-operandi/id781702094&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNGM45IEqfGKqusg9w5XkK5LaIof1Q"
+                         style="text-decoration: none! important;
+                              color: #222222;">
+                        <i class="fas fa-mobile-alt"
+                           style="opacity: .85;">
+                        </i>&nbsp;
+                        Download the Moda App
+                      </a>
+                      <span>  |  </span>
+                      <a class="social-link"
+                         href="https://www.instagram.com/modaoperandi/"
+                         rel="external"
+                         target="_blank"
+                         style="text-decoration: none! important;
+                                    color: #222222;">
+                        <i class="fab fa-instagram"
+                           style="opacity: .85;">
+                        </i>
+                      </a>
+                      <a class="social-link"
+                         href="http://www.facebook.com/ModaOperandi"
+                         rel="external"
+                         target="_blank"
+                         style="text-decoration: none! important;
+                                    color: #222222;">
+                        <i class="fab fa-facebook-f"
+                           style="opacity: .85;">
+                        </i>
+                      </a>
+                      <a class="social-link"
+                         href="http://www.pinterest.com/modaoperandi"
+                         rel="external"
+                         target="_blank"
+                         style="text-decoration: none! important;
+                                    color: #222222;">
+                        <i class="fab fa-pinterest"
+                           style="opacity: .85;">
+                        </i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="CONTACT_INFO">
+                    <td class="bottom"
+                        style="width: 100%;
+                                   font-size: 10px;
+                                   letter-spacing: .25px;">
+
+                      <a class="social-link"
+                         href="https://www.modaoperandi.com/privacy"
+                         target="_blank"
+                         data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/privacy&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNHY9nlNrdX_8oZ98PyT0TAydfW8dQ"
+                         style="text-decoration: none! important;
+                              color: #222222;">
+                        Our Privacy Policy
+                      </a>
+                      <span>  |  </span>
+                      <a href="https://www.modaoperandi.com/unsubscribe"
+                         target="_blank"
+                         data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/privacy&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNHY9nlNrdX_8oZ98PyT0TAydfW8dQ"
+                         style="text-decoration: none! important;
+                              color: #222222;">
+                        Manage your Email Preferences or Unsubscribe
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr class="CONTACT_INFO">
+                    <td class="bottom"
+                        style="width: 100%;
+                                   font-size: 10px;
+                                   letter-spacing: .25px;">
+                        Moda Operandi 315 Hudson Street, 5th Floor, New York, NY 10013
                       </td>
                     </tr>
-                    </tbody>
                   </table>
                 </td>
               </tr>
-              </#data>
-
-              <tr>
-          <td>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="email-footer"
-                   style="height: auto;
-                             width: 100%;
-                             padding: 15px;
-                             background-color: #E1E1E1;
-                             text-align: center;
-                             line-height: 18px;
-                             box-sizing: border-box;
-                             color: #222222 !important;
-                             font-family: 'Roboto', sans-serif;
-                             font-weight: 400;">
-
-              <tr class="CONTACT_INFO">
-
-                <td class="shipping-info"
-                    style="width: 100%;
-                             font-size: 11px;
-                             letter-spacing: .3px;">
-
-                  Free U.S. Shipping & Returns&nbsp;&nbsp;|&nbsp;
-                  <span class="WW">Worldwide Shipping for $20 or Less&nbsp;&nbsp;|&nbsp;</span>
-                  NYC Same-Day Delivery
-                </td>
-              </tr>
-              <tr class="CONTACT_INFO">
-                <td class="client-services"
-                    style="width: 100%;
-                             font-size: 11px;
-                             letter-spacing: .3px;">
-
-                  <a href="mailto:care@modaoperandi.com" data-text="Email Client Services"
-                     style="text-decoration: none! important;
-                        color: #222222;">
-                    Contact Client Services
-                    <i class="fas fa-envelope"
-                       style="opacity: .85;">
-                    </i>
-                  </a>
-                  <span class="WW">&nbsp;&nbsp;|&nbsp;1 (800) 707-9898</span>
-                  <span>  |  </span>
-                  <a href="https://www.modaoperandi.com/rewards"
-                     target="_blank"
-                     data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/rewards&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNGIFjuaWZm8hniQPnKMSu4NWZQDJA"
-                     style="text-decoration: none! important;
-                              color: #222222;">
-                    Join Moda Rewards
-                  </a>
-                </td>
-              </tr>
-
-              <tr class="footer-border"></tr>
-
-              <tr class="CONTACT_INFO">
-                <td class="bottom"
-                    style="width: 100%;
-                             font-size: 10px;
-                             letter-spacing: .3px;">
-
-                  <a class="download-mo"
-                     href="https://itunes.apple.com/us/app/moda-operandi/id781702094"
-                     target="_blank"
-                     data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://itunes.apple.com/us/app/moda-operandi/id781702094&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNGM45IEqfGKqusg9w5XkK5LaIof1Q"
-                     style="text-decoration: none! important;
-                        color: #222222;">
-                    <i class="fas fa-mobile-alt"
-                       style="opacity: .85;">
-                    </i>&nbsp;
-                    Download the Moda App
-                  </a>
-                  <span>  |  </span>
-                  <a class="social-link"
-                     href="https://www.instagram.com/modaoperandi/"
-                     rel="external"
-                     target="_blank"
-                     style="text-decoration: none! important;
-                              color: #222222;">
-                    <i class="fab fa-instagram"
-                       style="opacity: .85;">
-                    </i>
-                  </a>
-                  <a class="social-link"
-                     href="http://www.facebook.com/ModaOperandi"
-                     rel="external"
-                     target="_blank"
-                     style="text-decoration: none! important;
-                              color: #222222;">
-                    <i class="fab fa-facebook-f"
-                       style="opacity: .85;">
-                    </i>
-                  </a>
-                  <a class="social-link"
-                     href="http://www.pinterest.com/modaoperandi"
-                     rel="external"
-                     target="_blank"
-                     style="text-decoration: none! important;
-                              color: #222222;">
-                    <i class="fab fa-pinterest"
-                       style="opacity: .85;">
-                    </i>
-                  </a>
-                </td>
-              </tr>
-              <tr class="CONTACT_INFO">
-                <td class="bottom"
-                    style="width: 100%;
-                             font-size: 10px;
-                             letter-spacing: .25px;">
-
-                  <a class="social-link"
-                     href="https://www.modaoperandi.com/privacy"
-                     target="_blank"
-                     data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/privacy&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNHY9nlNrdX_8oZ98PyT0TAydfW8dQ"
-                     style="text-decoration: none! important;
-                        color: #222222;">
-                    Our Privacy Policy
-                  </a>
-                  <span>  |  </span>
-                  <a href="https://www.modaoperandi.com/unsubscribe"
-                     target="_blank"
-                     data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/privacy&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNHY9nlNrdX_8oZ98PyT0TAydfW8dQ"
-                     style="text-decoration: none! important;
-                        color: #222222;">
-                    Manage your Email Preferences or Unsubscribe
-                  </a>
-                </td>
-              </tr>
-
-              <tr class="CONTACT_INFO">
-                <td class="bottom"
-                    style="width: 100%;
-                             font-size: 10px;
-                             letter-spacing: .25px;">
-                  Moda Operandi 315 Hudson Street, 5th Floor, New York, NY 10013
-                </td>
-              </tr>
             </table>
-          </td>
-        </tr>
-
-
-            </table>
+          <!--email content-->
           </td>
         </tr>
       </tbody>
     </table>
-
+  <!--email wrapper-->
   </body>
-
 </html>
