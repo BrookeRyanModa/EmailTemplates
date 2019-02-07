@@ -1,563 +1,593 @@
 <!doctype html>
 <html>
-<head>
-  <title>Your Trunkshows Launching</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600|Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <style type="text/css">
-    html {
-      background-color: #FFFFFF;
-      max-width: 100%;
-    }
-    body {
-      margin: 0;
-      padding: 0;
-      width: 100% !important;
-    }
-    .content-subnavigation a:hover, .content-subnavigation a:active {
-      font-weight: bold;
-    }
-    .client-services a:hover, .shipping-info a:hover {
-      font-weight: bold;
-    }
-    .CONTACT_INFO td a :hover {
-      font-weight: bold;
-    }
-    .shipping-info, .client-services {
-      text-transform: uppercase;
-      font-weight: 500;
-    }
-    .client-services i {
-      font-weight: 100;
-    }
-    .download-mo {
-      text-transform: uppercase;
-    }
-    .social-link i {
-      font-weight: 100;
-    }
-    .bottom a:hover {
-      font-weight: 500;
-    }
-    .latest-ts-name:hover {
-      font-weight: 500;
-    }
-    @media only screen and (max-width: 600px) {
-      .clothing {
-        font-size: 9.25px !important;
-        letter-spacing: .085em;
+  <head>
+    <title>Your Trunkshows Launching</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style type="text/css">
+      html {
+        background-color: #FFFFFF;
+        max-width: 100%;
       }
-      .new {
-        display: none !important;
-      }
-      .product {
-        width: 46% !important;
-        height: auto;
-        margin: 2% !important;
-        display: inline-block !important;
-        float: left !important;
-      }
-      .picks-header {
-        margin: 0 !important;
-      }
-      .TRUNKSHOW_NAME {
-        font-size: 20px !important;
-        letter-spacing: .35px !important;
-      }
-      .WW {
-        display: none !important;
-      }
-      .latest-ts-name {
-        font-size: 12px !important;
-      }
-      .CONTACT_INFO {
-        line-height: 15px !important;
-      }
-      .CONTACT_INFO td {
-        font-size: 8px !important;
-      }
-      td.bottom {
-        font-size: 8px !important;
-      }
-      table td {
-        border-collapse: collapse;
-      }
-      span [class=WW] {
-        display: none !important;
-      }
-      table[class=mobile-only],
-      table[class=mobile-only] img {
-        display: none !important;
-        width: 0;
-        height: 0;
-      }
-      td[class=desktop-only],
-      td[class=desktop-only] img {
-        display: block !important;
-        width: 50%;
-        height: auto;
-      }
-      td[class=right-top-text] {
-        text-align: right;
-      }
-      /* mobile-specific CSS styles go here */
-      td[class=empty-space],
-      a[class=new] {
-        width: 0;
-        display: none !important;
-      }
-      table[class=container] {
-        float: left;
-        width: 50% !important;
-      }
-      td[class=desktop-only],
-      td[class=desktop-only] img {
-        display: none !important;
-        width: 0;
-        height: 0;
-      }
-      table[class=mobile-only] {
-        display: block !important;
-        width: 100%;
-        height: auto;
-      }
-      td[class=trunkshow-empty-space] {
-        width: 100%;
-        height: 20px;
-        display: none
-      }
-      table[class=emailwrapper],
-      table[class=emailcontent],
-      table[class=emailfooter],
-      table[class=footerwrapper] {
-        width: 100% !important
-      }
-      table[class=email-subheader] td,
-      td[class=contact-block],
-      td[class=trunkshow-listing],
-      td[class=special-content-image] {
-        display: block;
-        width: 100%
-      }
-      table[class=email-subheader] td {
-        text-align: left;
-        padding: 0
-      }
-      td[class=trunkshow-dates] {
-        display: block !important;
-        padding: 0 20px !important;
-        width: 87.5% !important
-      }
-      td[class=hero-image] img,
-      td[class=collection-header-image] img,
-      td[class=product-listing] img,
-      td[class=trunkshow-listing] img,
-      td[class=promo-header-image] img {
-        width: 100%
-      }
-      td[class=product-listing] {
-        display: block;
-        width: 100%;
-        padding: 0
-      }
-      td[class=product-listing-item] {
-        padding: 0 10px 10px
-      }
-      td[class=trunkshow-header-half-image],
-      td[class=trunkshow-cell] {
-        display: block;
-        width: 100%
-      }
-      td[class=trunkshow-header-half-image] img,
-      td[class=trunkshow-cell] img {
-        width: 100%
-      }
-      td[class=trunkshow-cell] {
-        padding: 0 0 20px
-      }
-      td[class=trunkshow-listing] {
-        margin-bottom: 0px;
-      }
-      td[class=module-3x3] {
-        width: 33%;
-        padding: 0px
-      }
-      table[class=email-module-2x2] {
-        width: 100%
-      }
-      table[class=email-module-2x2] td {
-        width: 50%;
-        display: inline-block;
-        padding: 10px 0px 0px 0px;
-        box-sizing: border-box;
-        text-align: center;
-        height: auto
-      }
-      table[class=email-module-3x3] td img {
-        width: 100%;
-      }
-      table[class=email-module-3x3] {
-        width: 100%
-      }
-      table[class=email-module-3x3] td {
-        width: 33%;
-        display: inline-block;
-        padding: 10px 0px 0px 0px;
-        box-sizing: border-box;
-        text-align: center;
-        height: auto
-      }
-      table[class=email-module-2x2] td img {
-        width: 100%;
-      }
-      table[class=email-module-2x2-expand] {
-        width: 100%
-      }
-      table[class=email-module-2x2-expand] td {
-        width: 100%;
-        display: inline-block;
-        padding: 5px 0px 0px 0px;
-        margin: 5px 0px 0px 0px;
-        box-sizing: border-box;
-        text-align: center;
-        height: auto
-      }
-      table[class=email-module-2x2-expand] td img {
-        width: 100%;
-      }
-      table[class=email-module-8] {
-        width: 100%
-      }
-      table[class=email-module-8] td {
-        width: 12.5%;
-        display: inline-block;
-        padding: 10px 0px 0px 0px;
-        box-sizing: border-box;
-        text-align: center;
-        height: auto
-      }
-      table[class=email-module-8] td img {
-        width: 100%;
-      }
-      table[class=module-center-text] {
-        width: 100%
-      }
-      table[class=promo-content] {
-        width: 100%
-      }
-      table[class=module-center-text] td {
-        display: inline-block;
-        width: 100%
-      }
-      td[class=module-left-handle],
-      td[class=module-right-handle] {
-        display: none;
-      }
-      td[class=module-center] {
-        width: 100%
-      }
-      td[class=module-center] img {
-        width: 100%;
-        height: auto
-      }
-      td[class=module-left-handle] img,
-      td[class=module-right-handle] img {
-        display: none;
-        width: 0;
-        height: 0
-      }
-      td[class=promo-left], td[class=promo-right] {
-        display: block;
-        width: 100%;
-        height: auto
-      }
-      td[class=promo-inner-content] {
-        padding: 0 20px
-      }
-      td[class=promo-inner-content] img {
-        padding-top: 10px
-      }
-      td[class=flowers] {
-        display: block;
-        width: 100%;
-        height: auto;
-        padding: 0
-      }
-      td[class=promo-header] {
-        padding: 20px 10px
-      }
-      td[class=promo-header],
-      td[class=promo-left],
-      td[class=flowers] img {
-        width: 100%
-      }
-      td[class=promo-container],
-      td[class=promo-header] {
-        background: none
-      }
-      td[class=promo-cta-button] {
-        display: block;
-        width: 100%;
-        margin-bottom: 10px;
-      }
-      table[class=emailwrapper],
-      table[class=emailcontent] {
+      body {
+        margin: 0;
+        padding: 0;
         width: 100% !important;
       }
-      table[class=listed_items] {
-        width: 48% !important;
-        margin: 0 1% 0 1% !important;
+      .content-subnavigation a:hover, .content-subnavigation a:active {
+        font-weight: bold;
       }
-      table[class=listed_items] img {
-        width: 100% !important;
+      .client-services a:hover, .shipping-info a:hover {
+        font-weight: bold;
       }
+      .CONTACT_INFO td a :hover {
+        font-weight: bold;
+      }
+      .shipping-info, .client-services {
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      .client-services i {
+        font-weight: 100;
+      }
+      .download-mo {
+        text-transform: uppercase;
+      }
+      .social-link i {
+        font-weight: 100;
+      }
+      .bottom a:hover {
+        font-weight: 500;
+      }
+      .latest-ts-name:hover {
+        font-weight: 500;
+      }
+      @media only screen and (max-width: 600px) {
+        .clothing {
+          font-size: 9.25px !important;
+          letter-spacing: .085em;
+        }
+        .new {
+          display: none !important;
+        }
+        .WW {
+          display: none !important;
+        }
+        .CONTACT_INFO {
+          line-height: 15px !important;
+        }
+        .CONTACT_INFO td {
+          font-size: 8px !important;
+        }
+        td.bottom {
+          font-size: 8px !important;
+        }
+        table td {
+          border-collapse: collapse;
+        }
+        span [class=WW] {
+          display: none !important;
+        }
+        table[class=mobile-only],
+        table[class=mobile-only] img {
+          display: none !important;
+          width: 0;
+          height: 0;
+        }
+        td[class=desktop-only],
+        td[class=desktop-only] img {
+          display: block !important;
+          width: 50%;
+          height: auto;
+        }
+        td[class=right-top-text] {
+          text-align: right;
+        }
+        /* mobile-specific CSS styles go here */
+        td[class=empty-space],
+        a[class=new] {
+          width: 0;
+          display: none !important;
+        }
+        table[class=container] {
+          float: left;
+          width: 50% !important;
+        }
+        td[class=desktop-only],
+        td[class=desktop-only] img {
+          display: none !important;
+          width: 0;
+          height: 0;
+        }
+        table[class=mobile-only] {
+          display: block !important;
+          width: 100%;
+          height: auto;
+        }
+        td[class=trunkshow-empty-space] {
+          width: 100%;
+          height: 20px;
+          display: none
+        }
+        table[class=emailwrapper],
+        table[class=emailcontent],
+        table[class=emailfooter],
+        table[class=footerwrapper] {
+          width: 100% !important
+        }
+        table[class=email-subheader] td,
+        td[class=contact-block],
+        td[class=trunkshow-listing],
+        td[class=special-content-image] {
+          display: block;
+          width: 100%
+        }
+        table[class=email-subheader] td {
+          text-align: left;
+          padding: 0
+        }
+        td[class=trunkshow-dates] {
+          display: block !important;
+          padding: 0 20px !important;
+          width: 87.5% !important
+        }
+        td[class=hero-image] img,
+        td[class=collection-header-image] img,
+        td[class=product-listing] img,
+        td[class=trunkshow-listing] img,
+        td[class=promo-header-image] img {
+          width: 100%
+        }
+        td[class=product-listing] {
+          display: block;
+          width: 100%;
+          padding: 0
+        }
+        td[class=product-listing-item] {
+          padding: 0 10px 10px
+        }
+        td[class=trunkshow-header-half-image],
+        td[class=trunkshow-cell] {
+          display: block;
+          width: 100%
+        }
+        td[class=trunkshow-header-half-image] img,
+        td[class=trunkshow-cell] img {
+          width: 100%
+        }
+        td[class=trunkshow-cell] {
+          padding: 0 0 20px
+        }
+        td[class=trunkshow-listing] {
+          margin-bottom: 0px;
+        }
+        td[class=module-3x3] {
+          width: 33%;
+          padding: 0px
+        }
+        table[class=email-module-2x2] {
+          width: 100%
+        }
+        table[class=email-module-2x2] td {
+          width: 50%;
+          display: inline-block;
+          padding: 10px 0px 0px 0px;
+          box-sizing: border-box;
+          text-align: center;
+          height: auto
+        }
+        table[class=email-module-3x3] td img {
+          width: 100%;
+        }
+        table[class=email-module-3x3] {
+          width: 100%
+        }
+        table[class=email-module-3x3] td {
+          width: 33%;
+          display: inline-block;
+          padding: 10px 0px 0px 0px;
+          box-sizing: border-box;
+          text-align: center;
+          height: auto
+        }
+        table[class=email-module-2x2] td img {
+          width: 100%;
+        }
+        table[class=email-module-2x2-expand] {
+          width: 100%
+        }
+        table[class=email-module-2x2-expand] td {
+          width: 100%;
+          display: inline-block;
+          padding: 5px 0px 0px 0px;
+          margin: 5px 0px 0px 0px;
+          box-sizing: border-box;
+          text-align: center;
+          height: auto
+        }
+        table[class=email-module-2x2-expand] td img {
+          width: 100%;
+        }
+        table[class=email-module-8] {
+          width: 100%
+        }
+        table[class=email-module-8] td {
+          width: 12.5%;
+          display: inline-block;
+          padding: 10px 0px 0px 0px;
+          box-sizing: border-box;
+          text-align: center;
+          height: auto
+        }
+        table[class=email-module-8] td img {
+          width: 100%;
+        }
+        table[class=module-center-text] {
+          width: 100%
+        }
+        table[class=promo-content] {
+          width: 100%
+        }
+        table[class=module-center-text] td {
+          display: inline-block;
+          width: 100%
+        }
+        td[class=module-left-handle],
+        td[class=module-right-handle] {
+          display: none;
+        }
+        td[class=module-center] {
+          width: 100%
+        }
+        td[class=module-center] img {
+          width: 100%;
+          height: auto
+        }
+        td[class=module-left-handle] img,
+        td[class=module-right-handle] img {
+          display: none;
+          width: 0;
+          height: 0
+        }
+        td[class=promo-left], td[class=promo-right] {
+          display: block;
+          width: 100%;
+          height: auto
+        }
+        td[class=promo-inner-content] {
+          padding: 0 20px
+        }
+        td[class=promo-inner-content] img {
+          padding-top: 10px
+        }
+        td[class=flowers] {
+          display: block;
+          width: 100%;
+          height: auto;
+          padding: 0
+        }
+        td[class=promo-header] {
+          padding: 20px 10px
+        }
+        td[class=promo-header],
+        td[class=promo-left],
+        td[class=flowers] img {
+          width: 100%
+        }
+        td[class=promo-container],
+        td[class=promo-header] {
+          background: none
+        }
+        td[class=promo-cta-button] {
+          display: block;
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        table[class=emailwrapper],
+        table[class=emailcontent] {
+          width: 100% !important;
+        }
+        table[class=listed_items] {
+          width: 48% !important;
+          margin: 0 1% 0 1% !important;
+        }
+        table[class=listed_items] img {
+          width: 100% !important;
+        }
 
-      td[class=right-top-text] {
-        text-align: left;
+        td[class=right-top-text] {
+          text-align: left;
+        }
       }
-    }
-  </style>
-</head>
-<body>
-<style>
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600|Roboto');
-</style>
+    </style>
+  </head>
+  <body>
+<!--below fonts: Roboto for temp footer, Monterrat was used in TS_Launching-->
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600|Roboto');
+    </style>
+
 <!--WRAPPER TABLE-->
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="emailwrapper" style="background-color: #FFFFFF; align-items: center;" width="100%">
-  <tbody>
-  <tr>
-    <td>
-      <!--EMAIL CONTENT MAIN TABLE-->
-      <table align="center" border="0" cellpadding="0" cellspacing="0" class="emailcontent"
-             style="height: auto;
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="emailwrapper" style="background-color: #FFFFFF; align-items: center;" width="100%">
+      <tbody>
+        <tr>
+          <td>
+<!--EMAIL CONTENT MAIN TABLE-->
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="emailcontent"
+                   style="height: auto;
                           width: 100%;
                           max-width: 600px;
                           font-family: 'Montserrat', sans-serif;
                           text-align: center;">
+              <tbody>
+                <tr>
+                  <td>
 
-        <tbody>
-        <tr>
-          <td>
-            <!--HEADER/NAV TABLE-->
-            <table align="center" style="max-width: 600px;" border="0" cellpadding="0" cellspacing="0" class="emailcontent" width="100%">
-              <tr class="LOGO">
-                <td data-content-region-name="Region2" align="center" class="content-header">
-                  <a href="${clickthrough('Logo','EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="text-decoration:none; font-family: 'Arial', sans-serif;" target="_blank">
-                    <img alt="Moda Operandi" border="0" src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5bd36ce168dab7522a224631/3bdcb581e3e3d39dd183aeb28d0c771a/WomensLogo_800.gif"
-                         style="width: 70%;
-                                            max-width: 375px;
-                                            height: auto;
-                                            align-self: center;
-                                            margin: 25px 0 5px 0;"/>
-                  </a>
-                </td>
-              </tr>
-              <tr class="SUB_NAVIGATION">
-                <td align="center" class="content-subnavigation" data-content-region-name="Region1"
-                    style="font-size: 11px;
-                                        font-family: 'Arial', sans-serif;
-                                        letter-spacing: 0.1em;
-                                        line-height: 25px;
-                                        opacity: .85;">
+<!--HEADER/NAV TABLE-->
+                    <table align="center" style="max-width: 600px;" border="0" cellpadding="0" cellspacing="0" class="emailcontent" width="100%">
 
-                  <span style="text-transform: uppercase;">
-                    <a class="clothing" href="${clickthrough('Trunkshows', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4px; color: #222222; text-decoration: none;" target="_blank">
-                      TRUNKSHOWS
-                    </a>
-                    <a class="clothing" href="${clickthrough('New', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4px; color: #222222; text-decoration: none;" target="_blank">
-                      NEW
-                    </a>
-                    <a class="clothing" href="${clickthrough('Clothing', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4px; color: #222222; text-decoration: none;" target="_blank">
-                      CLOTHING
-                    </a>
-                    <a class="new" href="${clickthrough('Shoes', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4px; color: #222222; text-decoration: none;" target="_blank">
-                      SHOES
-                    </a>
-                    <a class="new" href="${clickthrough('Handbags', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4px; color: #222222; text-decoration: none;" target="_blank">
-                      BAGS
-                    </a>
-                    <a class="clothing" href="${clickthrough('Jewelry', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4px; color: #222222; text-decoration: none;" target="_blank">
-                      JEWELRY
-                    </a>
-                    <a class="clothing" href="${clickthrough('The_Edit', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}" style="padding: 0 4px; color: #222222; text-decoration: none;" target="_blank">
-                      THE EDIT
-                    </a>
-                  </span>
-                </td>
-              </tr>
+                      <tr class="LOGO">
+                        <td data-content-region-name="Region2" align="center" class="content-header">
+
+                          <a href="${clickthrough('Logo','EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                             style="text-decoration:none;
+                                    font-family: 'Arial', sans-serif;"
+                             target="_blank">
+
+                            <img alt="Moda Operandi" border="0" src="https://trello-attachments.s3.amazonaws.com/5b16f56235171b7296702293/5bd36ce168dab7522a224631/3bdcb581e3e3d39dd183aeb28d0c771a/WomensLogo_800.gif"
+                                 style="width: 70%;
+                                        max-width: 375px;
+                                        height: auto;
+                                        align-self: center;
+                                        margin: 25px 0 5px 0;"/>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr class="SUB_NAVIGATION">
+                        <td align="center" class="content-subnavigation" data-content-region-name="Region1"
+                            style="font-size: 11px;
+                                    font-family: 'Arial', sans-serif;
+                                    letter-spacing: 0.1em;
+                                    line-height: 25px;
+                                    opacity: .85;">
+
+                          <span style="text-transform: uppercase;">
+
+                            <a class="clothing"
+                               href="${clickthrough('Trunkshows', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                               style="padding: 0 4px; color: #222222; text-decoration: none;"
+                               target="_blank">
+
+                              TRUNKSHOWS
+                            </a>
+
+                            <a class="clothing"
+                               href="${clickthrough('New', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                               style="padding: 0 4px; color: #222222; text-decoration: none;" target="_blank">
+
+                              NEW
+                            </a>
+
+                            <a class="clothing"
+                               href="${clickthrough('Clothing', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                               style="padding: 0 4px; color: #222222; text-decoration: none;" target="_blank">
+
+                              CLOTHING
+                            </a>
+
+                            <a class="new"
+                               href="${clickthrough('Shoes', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                               style="padding: 0 4px; color: #222222; text-decoration: none;"
+                               target="_blank">
+
+                              SHOES
+                            </a>
+
+                            <a class="new"
+                               href="${clickthrough('Handbags', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                               style="padding: 0 4px; color: #222222; text-decoration: none;"
+                               target="_blank">
+
+                              BAGS
+                            </a>
+
+                            <a class="clothing"
+                               href="${clickthrough('Jewelry', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                               style="padding: 0 4px; color: #222222; text-decoration: none;"
+                               target="_blank">
+
+                              JEWELRY
+                            </a>
+
+                            <a class="clothing"
+                               href="${clickthrough('The_Edit', 'EMAIL_SHA256_HASH_','EMAIL_MD5_HASH_')}"
+                               style="padding: 0 4px; color: #222222; text-decoration: none;"
+                               target="_blank">
+
+                              THE EDIT
+                            </a>
+
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <!--border btwn nav && email content-->
+                        <td height="0"
+                            style="font-size: 1px;
+                                    line-height: 1px;
+                                    border-bottom: 1px solid #f4e6e6;"
+                            width="100%">
+                        </td>
+
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+    <!--
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    EMAIL CONTENT BODY GOES HERE BETWEEN <tr><td><table><tbody> tags
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    -->
+
+
+    <!--EMAIL FOOTER-->
               <tr>
-                <td height="0" style="font-size: 1px; line-height: 1px;border-bottom: 1px solid #f4e6e6;" width="100%">
+                <td>
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" class="email-footer"
+                         style="height: auto;
+                                 width: 100%;
+                                 padding: 20px 10px 30px 10px;
+                                 font-size: 9px;
+                                 background-color: #E1E1E1;
+                                 text-align: center;
+                                 line-height: 17.5px;
+                                 box-sizing: border-box;
+                                 color: #222222 !important;
+                                 font-family: 'Roboto', sans-serif;
+                                 font-weight: 400;">
+
+                    <tr class="CONTACT_INFO">
+
+                      <td class="shipping-info"
+                          style="width: 100%">
+
+                        Free U.S. Shipping & Returns&nbsp;&nbsp;|&nbsp;
+                        <span class="WW">Worldwide Shipping for $20 or Less&nbsp;&nbsp;|&nbsp;</span>
+                        NYC Same-Day Delivery
+                      </td>
+                    </tr>
+
+                    <tr class="CONTACT_INFO">
+                      <td class="client-services" width="100%">
+
+                        <a href="mailto:care@modaoperandi.com" data-text="Email Client Services"
+                           style="text-decoration: none! important;
+                                        color: #222222;">
+
+                          Contact Client Services
+                          <i class="fas fa-envelope"
+                             style="opacity: .85;">
+                          </i>
+
+                        </a>
+
+                        <span class="WW">&nbsp;&nbsp;|&nbsp;1 (800) 707-9898</span>
+
+                        <span>  |  </span>
+
+                        <a href="https://www.modaoperandi.com/rewards"
+                           target="_blank"
+                           data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/rewards&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNGIFjuaWZm8hniQPnKMSu4NWZQDJA"
+                           style="text-decoration: none! important;
+                                        color: #222222;">
+
+                          Join Moda Rewards
+                        </a>
+
+                      </td>
+                    </tr>
+
+                    <tr class="footer-border"></tr>
+
+                    <tr class="CONTACT_INFO">
+                      <td class="bottom" width="100%">
+
+                        <a class="download-mo"
+                           href="https://itunes.apple.com/us/app/moda-operandi/id781702094"
+                           target="_blank"
+                           data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://itunes.apple.com/us/app/moda-operandi/id781702094&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNGM45IEqfGKqusg9w5XkK5LaIof1Q"
+                           style="text-decoration: none! important;
+                                        color: #222222;">
+
+                          <i class="fas fa-mobile-alt"
+                             style="opacity: .85;">
+                          </i>&nbsp;
+                          Download the Moda App
+                        </a>
+
+                        <span>  |  </span>
+
+                        <a class="social-link"
+                           href="https://www.instagram.com/modaoperandi/"
+                           rel="external"
+                           target="_blank"
+                           style="text-decoration: none! important;
+                                        color: #222222;">
+
+                          <i class="fab fa-instagram"
+                             style="opacity: .85;">
+                          </i>
+                        </a>
+
+                        <a class="social-link"
+                           href="http://www.facebook.com/ModaOperandi"
+                           rel="external"
+                           target="_blank"
+                           style="text-decoration: none! important;
+                                        color: #222222;">
+
+                          <i class="fab fa-facebook-f"
+                             style="opacity: .85;">
+                          </i>
+                        </a>
+
+                        <a class="social-link"
+                           href="http://www.pinterest.com/modaoperandi"
+                           rel="external"
+                           target="_blank"
+                           style="text-decoration: none! important;
+                                        color: #222222;">
+
+                          <i class="fab fa-pinterest"
+                             style="opacity: .85;">
+                          </i>
+
+                        </a>
+                      </td>
+                    </tr>
+                    <tr class="CONTACT_INFO">
+                      <td class="bottom" width="100%">
+
+                        <a class="social-link"
+                           href="https://www.modaoperandi.com/privacy"
+                           target="_blank"
+                           data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/privacy&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNHY9nlNrdX_8oZ98PyT0TAydfW8dQ"
+                           style="text-decoration: none! important;
+                                        color: #222222;">
+
+                          Our Privacy Policy
+                        </a>
+
+                        <span>  |  </span>
+
+                        <a href="https://www.modaoperandi.com/unsubscribe"
+                           target="_blank"
+                           data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/privacy&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNHY9nlNrdX_8oZ98PyT0TAydfW8dQ"
+                           style="text-decoration: none! important;
+                                        color: #222222;">
+
+                          Manage your Email Preferences or Unsubscribe
+                        </a>
+
+                      </td>
+                    </tr>
+
+                    <tr class="CONTACT_INFO">
+                      <td class="bottom" width="100%">
+                        Moda Operandi 315 Hudson Street, 5th Floor, New York, NY 10013
+                      </td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table>
+  <!--email content-->
           </td>
         </tr>
-        <tr>
-          <td>
-<!--
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-EMAIL CONTENT BODY GOES HERE BETWEEN <tr><td><table><tbody> tags
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
--->
-
-
-<!--EMAIL FOOTER-->
-        <tr>
-          <td>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="email-footer"
-                   style="height: auto;
-                           width: 100%;
-                           padding: 20px 10px 30px 10px;
-                           font-size: 9px;
-                           background-color: #E1E1E1;
-                           text-align: center;
-                           line-height: 17.5px;
-                           box-sizing: border-box;
-                           color: #222222 !important;
-                           font-family: 'Roboto', sans-serif;
-                           font-weight: 400;">
-
-              <tr class="CONTACT_INFO">
-
-                <td class="shipping-info"
-                    style="width: 100%">
-
-                  Free U.S. Shipping & Returns&nbsp;&nbsp;|&nbsp;
-                  <span class="WW">Worldwide Shipping for $20 or Less&nbsp;&nbsp;|&nbsp;</span>
-                  NYC Same-Day Delivery
-                </td>
-              </tr>
-
-              <tr class="CONTACT_INFO">
-                <td class="client-services" width="100%">
-
-                  <a href="mailto:care@modaoperandi.com" data-text="Email Client Services"
-                     style="text-decoration: none! important;
-                                  color: #222222;">
-
-                    Contact Client Services
-                    <i class="fas fa-envelope"
-                       style="opacity: .85;">
-                    </i>
-
-                  </a>
-
-                  <span class="WW">&nbsp;&nbsp;|&nbsp;1 (800) 707-9898</span>
-
-                  <span>  |  </span>
-
-                  <a href="https://www.modaoperandi.com/rewards"
-                     target="_blank"
-                     data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/rewards&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNGIFjuaWZm8hniQPnKMSu4NWZQDJA"
-                     style="text-decoration: none! important;
-                                  color: #222222;">
-
-                    Join Moda Rewards
-                  </a>
-
-                </td>
-              </tr>
-
-              <tr class="footer-border"></tr>
-
-              <tr class="CONTACT_INFO">
-                <td class="bottom" width="100%">
-
-                  <a class="download-mo"
-                     href="https://itunes.apple.com/us/app/moda-operandi/id781702094"
-                     target="_blank"
-                     data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://itunes.apple.com/us/app/moda-operandi/id781702094&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNGM45IEqfGKqusg9w5XkK5LaIof1Q"
-                     style="text-decoration: none! important;
-                                  color: #222222;">
-
-                    <i class="fas fa-mobile-alt"
-                       style="opacity: .85;">
-                    </i>&nbsp;
-                    Download the Moda App
-                  </a>
-
-                  <span>  |  </span>
-
-                  <a class="social-link"
-                     href="https://www.instagram.com/modaoperandi/"
-                     rel="external"
-                     target="_blank"
-                     style="text-decoration: none! important;
-                                  color: #222222;">
-
-                    <i class="fab fa-instagram"
-                       style="opacity: .85;">
-                    </i>
-                  </a>
-
-                  <a class="social-link"
-                     href="http://www.facebook.com/ModaOperandi"
-                     rel="external"
-                     target="_blank"
-                     style="text-decoration: none! important;
-                                  color: #222222;">
-
-                    <i class="fab fa-facebook-f"
-                       style="opacity: .85;">
-                    </i>
-                  </a>
-
-                  <a class="social-link"
-                     href="http://www.pinterest.com/modaoperandi"
-                     rel="external"
-                     target="_blank"
-                     style="text-decoration: none! important;
-                                  color: #222222;">
-
-                    <i class="fab fa-pinterest"
-                       style="opacity: .85;">
-                    </i>
-
-                  </a>
-                </td>
-              </tr>
-              <tr class="CONTACT_INFO">
-                <td class="bottom" width="100%">
-
-                  <a class="social-link"
-                     href="https://www.modaoperandi.com/privacy"
-                     target="_blank"
-                     data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/privacy&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNHY9nlNrdX_8oZ98PyT0TAydfW8dQ"
-                     style="text-decoration: none! important;
-                                  color: #222222;">
-
-                    Our Privacy Policy
-                  </a>
-
-                  <span>  |  </span>
-
-                  <a href="https://www.modaoperandi.com/unsubscribe"
-                     target="_blank"
-                     data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.modaoperandi.com/privacy&amp;source=gmail&amp;ust=1529394499148000&amp;usg=AFQjCNHY9nlNrdX_8oZ98PyT0TAydfW8dQ"
-                     style="text-decoration: none! important;
-                                  color: #222222;">
-
-                    Manage your Email Preferences or Unsubscribe
-                  </a>
-
-                </td>
-              </tr>
-
-              <tr class="CONTACT_INFO">
-                <td class="bottom" width="100%">
-                  Moda Operandi 315 Hudson Street, 5th Floor, New York, NY 10013
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-      <!--email content-->
-    </td>
-  </tr>
-  </tbody>
-</table>
-<!--email wrapper-->
-</body>
+      </tbody>
+    </table>
+  <!--email wrapper-->
+  </body>
 </html>
